@@ -28,10 +28,10 @@ export default function OptionProgram() {
                         {/* Content */}
                         <section className='container_section lg:px-0 px-5 relative z-10'>
                               {/* Header */}
-                              <div data-aos='fade-up' className='flex flex-col gap-y-4 mb-4'>
-                                    <h2 className='font-semibold text-[48px] text-theme-dark leading-tight'>Program Pilihan</h2>
+                              <div data-aos='fade-down' className='flex flex-col gap-y-4 mb-4'>
+                                    <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight'>Program Pilihan</h2>
                                     <div className='flex md:flex-row flex-col md:items-center items-start md:justify-between justify-start gap-6'>
-                                          <p className='font-normal text-base text-theme-secondary'>
+                                          <p className='w-full md:max-w-[450px] max-w-none font-normal text-base text-theme-secondary'>
                                                 Program-program terbaik dari Cinta QuraN Foundation untuk Sahabt Cinta Quran.
                                           </p>
                                           <Link href="/program" className='font-normal lg:text-base text-sm text-theme-ascent hover:text-opacity-70 duration-300'>
@@ -66,30 +66,38 @@ export default function OptionProgram() {
                                           </Link>
                                     </div>
                                     {/* Child */}
-                                    <div className='w-full md:col-span-2 col-span-6 grid grid-cols-1 gap-6 relative'>
+                                    <div data-aos='fade-left' className='w-full lg:col-span-2 col-span-6 grid grid-cols-1 gap-6 relative'>
                                           {/* Custom Navigation */}
-                                          <button className="option-mobile-swiper-prev lg:w-10 w-8 lg:h-10 h-8 bg-slate-50 border border-theme-gray_lg/50 rounded-full absolute top-0 left-1/2 transform -translate-x-1/2 z-[10] flex items-center justify-center cursor-pointer hover:bg-opacity-80 duration-200 group">
-                                                <Icon name='navigate' className='w-6 h-6 group-hover:w-7 group-hover:h-7 duration-200  text-theme-ascent rotate-90' />
+                                          <button className="option-mobile-swiper-prev absolute top-0 left-1/2 transform -translate-x-1/2 z-[10] flex items-center justify-center cursor-pointer hover:bg-opacity-80 duration-200 group">
+                                                <Icon name='navigate' className='w-10 h-10 duration-200  text-theme-ascent rotate-90' />
                                           </button>
-                                          <button className="option-mobile-swiper-next lg:w-10 w-8 lg:h-10 h-8 bg-slate-50 border border-theme-gray_lg/50 rounded-full absolute bottom-0 left-1/2 transform -translate-x-1/2 z-[10] flex items-center justify-center cursor-pointer hover:bg-opacity-80 duration-200 group">
-                                                <Icon name='navigate' className='w-6 h-6 group-hover:w-7 group-hover:h-7 duration-200  text-theme-ascent -rotate-90' />
+                                          <button className="option-mobile-swiper-next absolute bottom-0 left-1/2 transform -translate-x-1/2 z-[10] flex items-center justify-center cursor-pointer hover:bg-opacity-80 duration-200 group">
+                                                <Icon name='navigate' className='w-10 h-10 duration-200  text-theme-ascent -rotate-90' />
                                           </button>
                                           <Swiper
                                                 direction='vertical'
                                                 slidesPerView={3}
                                                 spaceBetween={24}
+                                                breakpoints={{
+                                                      0: {
+                                                            slidesPerView: 2, // Untuk layar kecil (mobile)
+                                                      },
+                                                      768: {
+                                                            slidesPerView: 3, // Untuk layar besar (desktop)
+                                                      },
+                                                }}
                                                 navigation={{
                                                       nextEl: '.option-mobile-swiper-next',
                                                       prevEl: '.option-mobile-swiper-prev',
                                                 }}
                                                 loop={true}
                                                 modules={[Navigation]}
-                                                className="option-mobile-swiper w-full h-[870px] col-span-1"
+                                                className="option-mobile-swiper w-full lg:h-[870px] md:h-[630px] h-[410px] col-span-1"
                                           >
                                                 {/* Slide */}
                                                 {Array.from({ length: 5 }).map((_, index) => (
                                                       <SwiperSlide key={index}>
-                                                            <Link href={'#'} className='block w-full h-[269px] rounded-[24px] relative overflow-hidden group '>
+                                                            <Link href={'#'} className='block w-full lg:h-[269px] h-[200px] rounded-[24px] relative overflow-hidden group '>
                                                                   <div className='absolute w-full h-full top-0 inset-x-0 bg-black/10 z-[1]'></div>
                                                                   <Image src='/assets/images/kpmt.svg' width={744} height={200} alt='Option Program' className='w-full h-full object-cover group-hover:scale-110 duration-500 grayscale' />
                                                                   <div className='absolute left-0 bottom-0 w-full h-full lg:h-auto p-6 flex text-slate-50 z-[2] items-center justify-center lg:items-start lg:justify-start'>

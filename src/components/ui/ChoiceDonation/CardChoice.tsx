@@ -21,8 +21,8 @@ export default function CardChoice(props: CardChoiceProps) {
 
       return (
             <>
-                  <Link href={props.link} className="w-full bg-white rounded-[8px] overflow-hidden block border border-theme-gray_lg/40 shadow-md lg:hover:-translate-y-1 duration-300">
-                        <div className='w-full lg:h-[360px] h-[200px] rounded-t-[8px] overflow-hidden'>
+                  <Link href={props.link} className="w-full bg-white rounded-[16px] overflow-hidden block border border-theme-gray_lg/40 shadow-sm lg:hover:-translate-y-1 duration-300">
+                        <div className='w-full lg:h-[360px] h-[200px] rounded-t-[16px] overflow-hidden'>
                               <Image
                                     src={props.image}
                                     alt='Choice Donation'

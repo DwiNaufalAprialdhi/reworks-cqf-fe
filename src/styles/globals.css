@@ -1088,3 +1088,7 @@
   );
   transition: all 0.3s ease;
 }
+
+.inspiration-swiper {
+  overflow: visible !important;
+}

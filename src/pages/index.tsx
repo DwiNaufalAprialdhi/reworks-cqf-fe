@@ -26,9 +26,9 @@ export default function index() {
         <Event />
       </div>
       <OptionProgram />
+      <Inspiration />
       <ChoiceDonation />
       <Bussines />
-      <Inspiration />
       <AmazingGroup />
       <Banner />
       <Footer />

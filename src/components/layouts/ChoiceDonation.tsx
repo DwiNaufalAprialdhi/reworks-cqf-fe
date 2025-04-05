@@ -1,197 +1,107 @@
-import React, { useEffect } from 'react'
-import Icon from '../Icons/Icon'
+import React, { useRef, useState } from 'react'
+import ButtonTabMenu from '../materials/ButtonTabMenu'
+// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper as SwiperType } from "swiper"; // ✅ Import SwiperType dari 'swiper'
+import { Navigation } from "swiper/modules";
 import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination, Navigation } from 'swiper/modules';
+import Icon from '../Icons/Icon';
 import CardChoice from '../ui/ChoiceDonation/CardChoice';
-import AOS from "aos";
-import ButtonCategory from '../materials/ButtonCategory';
-
-
 
 export default function ChoiceDonation() {
-
-      useEffect(() => {
-            AOS.init({
-                  duration: 1000, // Durasi animasi dalam milidetik
-                  once: true, // Apakah animasi hanya dijalankan sekali
-            });
-      }, []);
-
+      const swiperRef = useRef<SwiperType | null>(null); // ✅ Gunakan SwiperType untuk ref
+      const [progress, setProgress] = useState(0);
       return (
             <>
-                  <main className='w-full h-auto overflow-x-hidden relative lg:mb-[0px] mb-[0px] font-smooth'>
-                        <section className='container_section'>
+                  <main className="inspiration w-full h-auto relative z-[10] overflow-hidden font-smooth">
+                        <section className='container_section relative z-10'>
                               {/* Header */}
-                              <div data-aos='fade-right' className='flex items-center justify-between lg:mb-[32px] mb-4 lg:px-0 px-5'>
-                                    <div className='flex flex-col gap-y-4'>
-                                          <h2 className='text_title'>Donasi Pilihan</h2>
-                                          <p className='text_subtitle'>Pilih dan salurkan donasi melalui program-program kami yang berarti bagi sahabat Cinta quran.</p>
-                                    </div>
-                                    <div className='hidden lg:flex items-center gap-x-6'>
-                                          <button className='choice-swiper-prev w-auto h-auto cursor-pointer hover:scale-105 duration-200'>
-                                                <Icon name='arrowLeftCircleOutline' className='w-[56px] h-[56px] text-theme-ascent' />
-                                          </button>
-                                          <button className='choice-swiper-next w-auto h-auto cursor-pointer hover:scale-105 duration-200'>
-                                                <Icon name='arrowRightCircleOutline' className='w-[56px] h-[56px] text-theme-ascent' />
-                                          </button>
+                              <div data-aos='fade-right' className='flex flex-col items-center justify-center gap-y-4 lg:mb-[32px] mb-5'>
+                                    <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight text-center'>Donasi Pilihan</h2>
+                                    <div className='flex md:flex-row flex-col md:items-center items-start md:justify-between justify-start gap-6'>
+                                          <p className='w-full font-normal text-base text-theme-secondary text-center'>
+                                                Pilih dan salurkan donasi melalui program-program kami yang berarti bagi sahabat Cinta quran.
+                                          </p>
                                     </div>
                               </div>
-                              {/* Slider Category */}
-                              <div data-aos='fade-left' className='w-full grid grid-cols-1 lg:mb-5 mb-0 lg:pl-0 pl-5'>
-                                    <Swiper
-                                          slidesPerView={1}
-                                          spaceBetween={10}
-                                          navigation={{
-                                                nextEl: '.choice-swiper-next',
-                                                prevEl: '.choice-swiper-prev',
-                                          }}
-                                          breakpoints={{
-                                                0: {
-                                                      slidesPerView: 2.2,
-                                                      spaceBetween: 10,
-                                                },
-                                                320: {
-                                                      slidesPerView: 2.2,
-                                                      spaceBetween: 10,
-                                                },
-                                                640: {
-                                                      slidesPerView: 4.2,
-                                                      spaceBetween: 20,
-                                                },
-                                                768: {
-                                                      slidesPerView: 4.2,
-                                                      spaceBetween: 20,
-                                                },
-                                                1024: {
-                                                      slidesPerView: 5,
-                                                      spaceBetween: 20,
-                                                },
-                                                1280: {
-                                                      slidesPerView: 5,
-                                                      spaceBetween: 24,
-                                                },
-                                          }}
-                                          modules={[Navigation]}
-                                          className="inspiration-swiper w-full h-auto col-span-1"
-                                    >
-                                          <SwiperSlide>
-                                                <ButtonCategory
-                                                      title='Semua Kajian'
-                                                      className='w-full bg-theme-ascent/5 border-theme-ascent text-theme-ascent'
-                                                >
-                                                      <Icon name='menu' className='lg:w-6 lg:h-6 w-4 h-4 text-theme-ascent' />
-                                                </ButtonCategory>
-                                          </SwiperSlide>
-                                          <SwiperSlide>
-                                                <ButtonCategory
-                                                      className="w-full"
-                                                      title='Kemanusiaan'
-                                                >
-                                                      <Icon name='humanity' className='lg:w-6 lg:h-6 w-4 h-4 group-hover:text-theme-ascent duration-500' />
-                                                </ButtonCategory>
-                                          </SwiperSlide>
-                                          <SwiperSlide>
-                                                <ButtonCategory
-                                                      className="w-full"
-                                                      title='Akan Datang'
-                                                >
-                                                      <Icon name='mosque' className='lg:w-6 lg:h-6 w-4 h-4 group-hover:text-theme-ascent duration-500' />
-                                                </ButtonCategory>
-                                          </SwiperSlide>
-                                          <SwiperSlide>
-                                                <ButtonCategory
-                                                      className="w-full"
-                                                      title='Perkantoran'
-                                                >
-                                                      <Icon name='office' className='lg:w-6 lg:h-6 w-4 h-4 group-hover:text-theme-ascent duration-500' />
-                                                </ButtonCategory>
-                                          </SwiperSlide>
-                                          <SwiperSlide>
-                                                <ButtonCategory
-                                                      className="w-full"
-                                                      title='Wakaf'
-                                                >
-                                                      <Icon name='wakaf' className='lg:w-6 lg:h-6 w-4 h-4 group-hover:text-theme-ascent duration-500' />
-                                                </ButtonCategory>
-                                          </SwiperSlide>
-                                          <SwiperSlide>
-                                                <ButtonCategory
-                                                      className="w-full"
-                                                      title='Wakaf'
-                                                >
-                                                      <Icon name='wakaf' className='lg:w-6 lg:h-6 w-4 h-4 group-hover:text-theme-ascent duration-500' />
-                                                </ButtonCategory>
-                                          </SwiperSlide>
-                                          <SwiperSlide>
-                                                <ButtonCategory
-                                                      className="w-full"
-                                                      title='Wakaf'
-                                                >
-                                                      <Icon name='wakaf' className='lg:w-6 lg:h-6 w-4 h-4 group-hover:text-theme-ascent duration-500' />
-                                                </ButtonCategory>
-                                          </SwiperSlide>
-                                          <SwiperSlide>
-                                                <ButtonCategory
-                                                      className="w-full"
-                                                      title='Wakaf'
-                                                >
-                                                      <Icon name='wakaf' className='lg:w-6 lg:h-6 w-4 h-4 group-hover:text-theme-ascent duration-500' />
-                                                </ButtonCategory>
-                                          </SwiperSlide>
-                                    </Swiper>
+                              {/* Tab Menu */}
+                              <div className='w-full h-max overflow-x-scroll scroll-smooth lg:px-0 px-5'>
+                                    <div className='w-max h-max mx-auto p-2 bg-theme-ascent/5 rounded-full flex items-center justify-center lg:gap-6 gap-3 flex-shrink-0'>
+                                          <ButtonTabMenu title={'Semua Kategori'} defaultChecked={true} name={'buttonTabMenu'} />
+                                          <ButtonTabMenu title={'Humanity'} name={'buttonTabMenu'} />
+                                          <ButtonTabMenu title={'Sedekah'} name={'buttonTabMenu'} />
+                                          <ButtonTabMenu title={'Wakaf'} name={'buttonTabMenu'} />
+                                    </div>
                               </div>
-                              {/* Card Program Slider */}
-                              <div data-aos='fade-right' className='w-full grid grid-cols-1 lg:pl-0 pl-5'>
+                        </section>
+                        {/* Swiper */}
+                        <section data-aos='fade-left' className="relative z-10 w-full h-max flex justify-center lg:my-[32px] my-5">
+                              <div className="w-full lg:max-w-[1200px] md:max-w-[696px] max-w-none md:pl-0 pl-5">
                                     <Swiper
-                                          slidesPerView={1}
-                                          spaceBetween={10}
-                                          pagination={{
-                                                clickable: true,
-                                          }}
-                                          loop={true}
+                                          onSwiper={(swiper) => (swiperRef.current = swiper)}
+                                          onSlideChange={(swiper) => setProgress((swiper.activeIndex + 1) / swiper.slides.length)}
+                                          slidesPerView={3.3}
+                                          spaceBetween={24}
                                           breakpoints={{
                                                 0: {
                                                       slidesPerView: 1.2,
-                                                      spaceBetween: 10,
-                                                },
-                                                640: {
-                                                      slidesPerView: 2,
-                                                      spaceBetween: 14,
+                                                      spaceBetween: 20,
                                                 },
                                                 768: {
-                                                      slidesPerView: 2,
-                                                      spaceBetween: 24,
-                                                },
-                                                1024: {
-                                                      slidesPerView: 3,
-                                                      spaceBetween: 24,
-                                                },
-                                                1280: {
                                                       slidesPerView: 3,
                                                       spaceBetween: 24,
                                                 },
                                           }}
-                                          modules={[Pagination]}
-                                          className="choice-swiper w-full col-span-1"
+                                          centeredSlides={false}
+                                          navigation={{
+                                                nextEl: ".inspiration-button-next",
+                                                prevEl: ".inspiration-button-prev",
+                                          }}
+                                          modules={[Navigation]}
+                                          className="inspiration-swiper w-full h-max scroll-smooth cursor-grab"
                                     >
-                                          {Array.from({ length: 6 }).map((_, index) => (
-                                                <SwiperSlide key={index} className='pt-5 pb-[46px]'>
+                                          {[...Array(6)].map((_, index) => (
+                                                <SwiperSlide key={index}>
                                                       <CardChoice
-                                                            link={`/live-donation/1`}
+                                                            link={'#'}
                                                             image={'/assets/images/program.svg'}
                                                             title={'Sedekah Beras untuk seluruh para keluarga di afrika selatan'}
                                                             amount={'Rp 500.000.124'}
                                                             date={'2 Hari Lagi'}
-                                                            progress={80}
-                                                      />
+                                                            progress={30} />
                                                 </SwiperSlide>
                                           ))}
                                     </Swiper>
                               </div>
                         </section>
-                  </main >
+
+                        {/* Progress Bar Pagination and Navigation */}
+                        <section data-aos='fade-left' className="container_section lg:px-0 px-5 relative z-10 flex items-center justify-between lg:gap-14 gap-5">
+                              {/* Progress Bar Pagination */}
+                              <div className="flex-grow w-full md:h-2 h-[7px] bg-[#D0D0D0] rounded-full relative">
+                                    <div
+                                          className="absolute top-0 left-0 md:h-2 h-[7px] bg-theme-ascent rounded-full transition-all duration-300"
+                                          style={{ width: `${progress * 100}%` }} // Progress Bar Dynamic Width
+                                    ></div>
+                              </div>
+
+                              {/* Navigation */}
+                              <div className="flex-shrink-0 flex items-center md:gap-6 gap-4">
+                                    <button
+                                          className="inspiration-button-prev"
+                                          onClick={() => swiperRef.current?.slidePrev()} // ✅ Tidak error lagi
+                                    >
+                                          <Icon name="navigate" className="md:w-8 md:h-8 w-7 h-7 text-theme-ascent" />
+                                    </button>
+                                    <button
+                                          className="inspiration-button-next"
+                                          onClick={() => swiperRef.current?.slideNext()} // ✅ Tidak error lagi
+                                    >
+                                          <Icon name="navigate" className="md:w-8 md:h-8 w-7 h-7 text-theme-ascent rotate-180" />
+                                    </button>
+                              </div>
+                        </section>
+                  </main>
             </>
       )
 }

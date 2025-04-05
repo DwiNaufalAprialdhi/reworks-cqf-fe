@@ -15,7 +15,7 @@ export default function Event() {
       return (
             <>
                   <main className='w-full h-auto overflow-x-hidden relative z-[7] lg:pb-[100px] pb-[50px] font-smooth'>
-                        <section className='container_section_view grid md:grid-cols-2 grid-cols-1 gap-[50px]'>
+                        <section className='container_section_view grid lg:grid-cols-2 grid-cols-1 gap-[50px]'>
                               {/* LEFT */}
                               <div data-aos='fade-right' className='w-full h-auto col-span-1 flex flex-col'>
                                     {/* Animate Pulse */}
@@ -25,7 +25,7 @@ export default function Event() {
                                           </p>
                                     </div>
                                     {/* Title */}
-                                    <h2 className='font-semibold text-[48px] leading-tight mb-4'>
+                                    <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight mb-4'>
                                           Rise of The Promised Land
                                     </h2>
                                     {/* Desc */}
