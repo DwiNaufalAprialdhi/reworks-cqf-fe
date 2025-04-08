@@ -24,7 +24,7 @@ export default function NewsUpdate() {
                               </div>
                               {/* Column Swiper */}
                               <section data-aos='fade-left' className="relative z-10 w-full h-max flex justify-center lg:my-[32px] my-5">
-                                    <div className="w-full lg:max-w-[1200px] md:max-w-[696px] max-w-none md:pl-0 pl-5">
+                                    <div className="w-full lg:max-w-[1200px] md:max-w-[696px] max-w-none">
                                           <Swiper
                                                 slidesPerView={3.3}
                                                 spaceBetween={24}
@@ -53,6 +53,9 @@ export default function NewsUpdate() {
                                           </Swiper>
                                     </div>
                               </section>
+                              <button className="w-full h-max mx-auto font-normal text-xs text-theme-ascent hover:text-opacity-70 duration-300">
+                                    Lihat yang lainnya
+                              </button>
                         </section>
                   </main>
             </>

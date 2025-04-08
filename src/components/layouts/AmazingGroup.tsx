@@ -44,7 +44,7 @@ export default function AmazingGroup() {
                         </div> */}
 
                         {/* Header */}
-                        <div data-aos='fade-up' className='container_section flex flex-col gap-y-4 lg:mb-[32px] mb-4 relative-z-[5]'>
+                        <div data-aos='fade-right' className='container_section flex flex-col gap-y-4 lg:mb-[32px] mb-4 relative-z-[5]'>
                               <h2 className='text_title text-center'>Amazing Group</h2>
                         </div>
 
@@ -61,7 +61,7 @@ export default function AmazingGroup() {
                               </div>
 
                               {/* Running Right */}
-                              <div data-aos='fade-right' className="w-full flex items-center justify-center py-1 lg:gap-6 gap-4 running-animation-right">
+                              <div data-aos='fade-left' className="w-full flex items-center justify-center py-1 lg:gap-6 gap-4 running-animation-right">
                                     {infiniteData.map((item, index) => (
                                           <CardAmazingGroup
                                                 key={`${item.id}-${index}`}
