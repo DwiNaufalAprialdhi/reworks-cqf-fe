@@ -8,6 +8,7 @@ import Hero from '@/components/layouts/Hero'
 import Inspiration from '@/components/layouts/Inspiration'
 import Mitra from '@/components/layouts/Mitra'
 import Navbar from '@/components/layouts/Navbar'
+import NewsUpdate from '@/components/layouts/NewsUpdate'
 import OptionProgram from '@/components/layouts/OptionProgram'
 import OrnamentHero from '@/components/ui/OrnamentHero'
 import Head from 'next/head'
@@ -32,6 +33,7 @@ export default function index() {
       <Bussines />
       <Mitra />
       <AmazingGroup />
+      <NewsUpdate />
       <Banner />
       <Footer />
     </>

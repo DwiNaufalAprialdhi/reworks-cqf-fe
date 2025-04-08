@@ -15,7 +15,9 @@ export default function Banner() {
                               {/* Layer */}
                               <div className='absolute w-full h-full top-0 left-0 z-[3] bg-gradient-to-r from-theme-ascent/85 to-theme-green/85'></div>
                               {/* Content */}
-                              <h2 className='w-full lg:max-w-[718px] max-w-none font-semibold lg:text-[32px] text-[24px] text-white text-center lg:text-start relative z-[5]'>Mari bergabung menjadi keluarga Cinta Quran Foundation agar bisa berbagi dengan sesama</h2>
+                              <h2 className='w-full lg:max-w-[718px] max-w-none font-semibold lg:text-[32px] text-[24px] text-white text-center lg:text-start relative z-[5]'>
+                                    Mari Bergabung Bersama CintaQuran Foundation Satu Hati Menggemakan #IndonesiaCintaQuran
+                              </h2>
                               <Link href='#' className='w-full lg:max-w-[390px] max-w-none relative z-[5]'>
                                     <ButtonIconOutline>
                                           Daftar Sekarang
