@@ -6,8 +6,8 @@ import React from 'react'
 export default function CardNewsUpdate() {
       return (
             <>
-                  <Link href='#' className='w-full h-max flex flex-col rounded-[16px] overflow-hidden shadow-sm bg-white hover:-translate-y-1 duration-300 transition-all transform'>
-                        {/* IMAGE */}
+                  <Link href='#' className='w-full h-max flex flex-col rounded-[16px] overflow-hidden shadow-md bg-white hover:-translate-y-1 duration-300 transition-all transform'>
+                        {/* image */}
                         <div className='w-full h-[360px] rounded-t-[16px] overflow-hidden'>
                               <Image
                                     src='/assets/images/news-update.png'

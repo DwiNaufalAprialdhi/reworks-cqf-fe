@@ -22,7 +22,7 @@ export default function Mitra() {
                                     </div>
                               </div>
                               {/* Column */}
-                              <div className="w-full grid md:grid-cols-4 grid-cols-2 md:gap-6 gap-5">
+                              <div data-aos='fade-left' className="w-full grid md:grid-cols-4 grid-cols-2 md:gap-6 gap-5">
                                     <div className='w-full col-span-1'>
                                           <CardAmazingGroup image={'/assets/images/cqf.svg'}
                                           />

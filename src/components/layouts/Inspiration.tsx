@@ -63,7 +63,13 @@ export default function Inspiration() {
                                     >
                                           {[...Array(6)].map((_, index) => (
                                                 <SwiperSlide key={index}>
-                                                      <CardInspiration />
+                                                      <CardInspiration
+                                                            image={'/assets/images/mengatasi.svg'}
+                                                            category={'Cinta Quran Creative Studio'}
+                                                            title={'Menyempurnakan Taqwa'}
+                                                            date={'Kamis, 30 September 2021'}
+                                                            time={'09:00 - 10:00'}
+                                                      />
                                                 </SwiperSlide>
                                           ))}
                                     </Swiper>

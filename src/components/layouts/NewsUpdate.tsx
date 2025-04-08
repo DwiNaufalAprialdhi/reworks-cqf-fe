@@ -53,7 +53,7 @@ export default function NewsUpdate() {
                                           </Swiper>
                                     </div>
                               </section>
-                              <button className="w-full h-max mx-auto font-normal text-xs text-theme-ascent hover:text-opacity-70 duration-300">
+                              <button data-aos='fade-left' className="w-full h-max mx-auto font-normal text-xs text-theme-ascent hover:opacity-70 duration-200">
                                     Lihat yang lainnya
                               </button>
                         </section>
