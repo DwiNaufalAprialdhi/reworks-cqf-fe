@@ -25,12 +25,12 @@ export default function ChoiceDonation() {
                                     </div>
                               </div>
                               {/* Tab Menu */}
-                              <div className='w-full h-max overflow-x-scroll scroll-smooth lg:px-0 px-5'>
+                              <div data-aos='fade-right' className='w-full h-max overflow-x-scroll scroll-smooth lg:px-0 px-5'>
                                     <div className='w-max h-max mx-auto p-2 bg-theme-ascent/5 rounded-full flex items-center justify-center lg:gap-6 gap-3 flex-shrink-0'>
-                                          <ButtonTabMenu title={'Semua Kategori'} defaultChecked={true} name={'buttonTabMenu'} />
-                                          <ButtonTabMenu title={'Humanity'} name={'buttonTabMenu'} />
-                                          <ButtonTabMenu title={'Sedekah'} name={'buttonTabMenu'} />
-                                          <ButtonTabMenu title={'Wakaf'} name={'buttonTabMenu'} />
+                                          <ButtonTabMenu title={'Semua Kategori'} defaultChecked={true} name={'buttonTabMenuDonation'} />
+                                          <ButtonTabMenu title={'Humanity'} name={'buttonTabMenuDonation'} />
+                                          <ButtonTabMenu title={'Sedekah'} name={'buttonTabMenuDonation'} />
+                                          <ButtonTabMenu title={'Wakaf'} name={'buttonTabMenuDonation'} />
                                     </div>
                               </div>
                         </section>

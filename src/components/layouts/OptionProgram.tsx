@@ -28,7 +28,7 @@ export default function OptionProgram() {
                         {/* Content */}
                         <section className='container_section lg:px-0 px-5 relative z-10'>
                               {/* Header */}
-                              <div data-aos='fade-down' className='flex flex-col gap-y-4 mb-4'>
+                              <div data-aos='fade-right' className='flex flex-col gap-y-4 mb-4'>
                                     <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight'>Program Pilihan</h2>
                                     <div className='flex md:flex-row flex-col md:items-center items-start md:justify-between justify-start gap-6'>
                                           <p className='w-full md:max-w-[450px] max-w-none font-normal text-base text-theme-secondary'>

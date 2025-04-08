@@ -6,6 +6,7 @@ import Event from '@/components/layouts/Event'
 import Footer from '@/components/layouts/Footer'
 import Hero from '@/components/layouts/Hero'
 import Inspiration from '@/components/layouts/Inspiration'
+import Mitra from '@/components/layouts/Mitra'
 import Navbar from '@/components/layouts/Navbar'
 import OptionProgram from '@/components/layouts/OptionProgram'
 import OrnamentHero from '@/components/ui/OrnamentHero'
@@ -29,6 +30,7 @@ export default function index() {
       <Inspiration />
       <ChoiceDonation />
       <Bussines />
+      <Mitra />
       <AmazingGroup />
       <Banner />
       <Footer />
