@@ -38,7 +38,7 @@
     @apply font-normal lg:text-base text-sm lg:leading-[24px] leading-normal text-theme-secondary;
   }
   .menu_footer_link {
-    @apply font-normal text-base hover:text-theme-ascent duration-300;
+    @apply font-normal text-sm hover:text-theme-ascent duration-300;
   }
   .transition_menu {
     @apply transition-all transform duration-300;

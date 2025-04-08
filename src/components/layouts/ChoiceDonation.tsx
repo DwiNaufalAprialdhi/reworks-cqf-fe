@@ -54,8 +54,8 @@ export default function ChoiceDonation() {
                                           }}
                                           centeredSlides={false}
                                           navigation={{
-                                                nextEl: ".inspiration-button-next",
-                                                prevEl: ".inspiration-button-prev",
+                                                nextEl: ".choice-donation-button-next",
+                                                prevEl: ".choice-donation-button-prev",
                                           }}
                                           modules={[Navigation]}
                                           className="inspiration-swiper w-full h-max scroll-smooth cursor-grab"
@@ -88,13 +88,13 @@ export default function ChoiceDonation() {
                               {/* Navigation */}
                               <div className="flex-shrink-0 flex items-center md:gap-6 gap-4">
                                     <button
-                                          className="inspiration-button-prev"
+                                          className="choice-donation-button-prev"
                                           onClick={() => swiperRef.current?.slidePrev()} // ✅ Tidak error lagi
                                     >
                                           <Icon name="navigate" className="md:w-8 md:h-8 w-7 h-7 text-theme-ascent" />
                                     </button>
                                     <button
-                                          className="inspiration-button-next"
+                                          className="choice-donation-button-next"
                                           onClick={() => swiperRef.current?.slideNext()} // ✅ Tidak error lagi
                                     >
                                           <Icon name="navigate" className="md:w-8 md:h-8 w-7 h-7 text-theme-ascent rotate-180" />
