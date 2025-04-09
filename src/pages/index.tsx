@@ -10,6 +10,7 @@ import Mitra from '@/components/layouts/Mitra'
 import Navbar from '@/components/layouts/Navbar'
 import NewsUpdate from '@/components/layouts/NewsUpdate'
 import OptionProgram from '@/components/layouts/OptionProgram'
+import OrnamentFooter from '@/components/ui/OrnamentFooter'
 import OrnamentHero from '@/components/ui/OrnamentHero'
 import OrnamentInspiration from '@/components/ui/OrnamentInspiration'
 import OrnamentMitra from '@/components/ui/OrnamentMitra'
@@ -42,8 +43,11 @@ export default function index() {
         <AmazingGroup />
         <NewsUpdate />
       </div>
-      <Banner />
-      <Footer />
+      <div className="w-full h-max relative footer_main overflow-hidden">
+        <OrnamentFooter />
+        <Banner />
+        <Footer />
+      </div>
     </>
   )
 }

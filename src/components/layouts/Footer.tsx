@@ -7,20 +7,7 @@ import MenuIconLink from './footer/MenuIconLink'
 export default function Footer() {
       return (
             <>
-                  <main className='footer_main hidden lg:block w-full h-auto py-20 overflow-hidden relative font-smooth'>
-                        {/* Ornament */}
-                        <div className='absolute bottom-[0px] left-0 w-full h-auto z-[1] bounceOpt01'>
-                              <Image src='/assets/ornament/of-1.svg' alt='ornament' width={1920} height={200} className='w-max h-auto object-cover' />
-                        </div>
-                        <div className='absolute bottom-[0px] left-0 w-full h-auto z-[2] bounceOpt02'>
-                              <Image src='/assets/ornament/of-2.svg' alt='ornament' width={1920} height={200} className='w-max h-auto object-cover' />
-                        </div>
-                        <div className='absolute bottom-[0px] left-0 w-full h-auto z-[3] bounceOpt03'>
-                              <Image src='/assets/ornament/of-3.svg' alt='ornament' width={1920} height={200} className='w-max h-auto object-cover opacity-50' />
-                        </div>
-                        <div className='absolute bottom-[0px] left-0 w-full h-auto z-[4] bounceOpt04'>
-                              <Image src='/assets/ornament/of-4.svg' alt='ornament' width={1920} height={200} className='w-max h-auto object-cover' />
-                        </div>
+                  <main className='hidden lg:block w-full pt-[100px] pb-[50px] h-auto overflow-hidden relative z-10 font-smooth'>
                         {/* Footer */}
                         <footer className='container_section relative z-[8]'>
                               <div data-aos='fade-up' className='w-full grid grid-cols-3 gap-[50px]'>
@@ -164,7 +151,7 @@ export default function Footer() {
                                           </div>
                                     </div>
                               </div>
-                              <h2 className='font-normal text-sm mt-[100px]'>© Copyright CintaQuran® Foundation All Rights Reserved.</h2>
+                              <h2 className='font-normal text-sm pt-[100px]'>© Copyright CintaQuran® Foundation All Rights Reserved.</h2>
                         </footer>
                   </main>
             </>
