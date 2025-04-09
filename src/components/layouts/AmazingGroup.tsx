@@ -30,8 +30,11 @@ export default function AmazingGroup() {
             <>
                   <main className="w-full h-auto pt-0 lg:mb-[100px] mb-[50px] grid grid-cols-1 relative z-10 overflow-hidden font-smooth">
                         {/* Header */}
-                        <div data-aos='fade-right' className='container_section flex flex-col gap-y-4 lg:mb-[32px] mb-4 relative-z-[5]'>
-                              <h2 className='text_title text-center'>Amazing Group</h2>
+                        <div data-aos='fade-right' className='container_section flex flex-col gap-y-3 lg:mb-[32px] mb-4 relative-z-[5]'>
+                              <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight text-center'>Amazing Group</h2>
+                              <p className='w-full font-normal text-base text-theme-secondary text-center'>
+                                    Satu hati menggemakan Indonesia Cinta Quran
+                              </p>
                         </div>
 
                         {/* Content */}

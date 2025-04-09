@@ -13,8 +13,8 @@ export default function NewsUpdate() {
                               {/* Header */}
                               <div data-aos='fade-right' className='flex flex-col gap-y-4 mb-4'>
                                     <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight'>News & Updates</h2>
-                                    <div className='flex md:flex-row flex-col md:items-center items-start md:justify-between justify-start gap-6'>
-                                          <p className='w-full md:max-w-[646px] max-w-none font-normal text-base text-theme-secondary'>
+                                    <div className='flex md:flex-row flex-col md:items-end items-start md:justify-between justify-start gap-6'>
+                                          <p className='w-full lg:max-w-[646px] md:max-w-[400px] max-w-none font-normal text-base text-theme-secondary'>
                                                 Berbagai hikmah sepanjang perjalanan Cinta Quran Foundation menuju peradaban dunia yang lebih baik
                                           </p>
                                           <Link href="#" className='font-normal lg:text-base text-sm text-theme-ascent hover:text-opacity-70 duration-300'>
@@ -34,9 +34,17 @@ export default function NewsUpdate() {
                                                             spaceBetween: 20,
                                                       },
                                                       768: {
+                                                            slidesPerView: 2.1,
+                                                            spaceBetween: 24,
+                                                      },
+                                                      1024: {
                                                             slidesPerView: 3,
                                                             spaceBetween: 24,
                                                       },
+                                                      1280: {
+                                                            slidesPerView: 3,
+                                                            spaceBetween: 24,
+                                                      }
                                                 }}
                                                 centeredSlides={false}
                                                 navigation={{

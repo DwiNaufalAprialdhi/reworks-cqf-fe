@@ -12,8 +12,8 @@ export default function Mitra() {
                               {/* Header */}
                               <div data-aos='fade-right' className='flex flex-col gap-y-4 mb-4'>
                                     <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight'>Mitra Cinta Quran</h2>
-                                    <div className='flex md:flex-row flex-col md:items-center items-start md:justify-between justify-start gap-6'>
-                                          <p className='w-full md:max-w-[646px] max-w-none font-normal text-base text-theme-secondary'>
+                                    <div className='flex md:flex-row flex-col md:items-end items-start md:justify-between justify-start gap-6'>
+                                          <p className='w-full lg:max-w-[646px] md:max-w-[400px] max-w-none font-normal text-base text-theme-secondary'>
                                                 Cinta Quran Foundation siap menjadi mitra strategis Lembaga, Perusahaan atau Instansi, dalam rangka mewujudkan pemberdayaan dan kemandirian umat
                                           </p>
                                           <Link href="/kemitraan" className='font-normal lg:text-base text-sm text-theme-ascent hover:text-opacity-70 duration-300'>

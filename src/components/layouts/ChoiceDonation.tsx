@@ -48,6 +48,14 @@ export default function ChoiceDonation() {
                                                       spaceBetween: 20,
                                                 },
                                                 768: {
+                                                      slidesPerView: 2,
+                                                      spaceBetween: 24,
+                                                },
+                                                1024: {
+                                                      slidesPerView: 3,
+                                                      spaceBetween: 24,
+                                                },
+                                                1280: {
                                                       slidesPerView: 3,
                                                       spaceBetween: 24,
                                                 },
@@ -60,7 +68,7 @@ export default function ChoiceDonation() {
                                           modules={[Navigation]}
                                           className="inspiration-swiper w-full h-max scroll-smooth cursor-grab"
                                     >
-                                          {[...Array(6)].map((_, index) => (
+                                          {[...Array(10)].map((_, index) => (
                                                 <SwiperSlide key={index}>
                                                       <CardChoice
                                                             link={'#'}
