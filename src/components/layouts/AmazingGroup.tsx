@@ -28,21 +28,7 @@ export default function AmazingGroup() {
 
       return (
             <>
-                  <main className="main_ag w-full h-auto pt-0 pb-[50px] lg:pt-20 lg:pb-20 grid grid-cols-1 relative overflow-hidden font-smooth">
-                        {/* Ornament */}
-                        {/* <div className='hidden lg:block absolute w-full h-auto top-0 right-0 z-[4] bounceOpt01'>
-                              <Image src='/assets/ornament/oo-1.svg' width={1920} height={1920} alt='Ornament' className='w-full h-full object-cover' />
-                        </div>
-                        <div className='hidden lg:block absolute w-full h-auto top-0 right-0 z-[3] bounceOpt02'>
-                              <Image src='/assets/ornament/oo-2.svg' width={1920} height={1920} alt='Ornament' className='w-full h-full object-cover' />
-                        </div>
-                        <div className='hidden lg:block absolute w-full h-auto top-0 right-0 z-[2] bounceOpt03'>
-                              <Image src='/assets/ornament/oo-3.svg' width={1920} height={1920} alt='Ornament' className='w-full h-full object-cover' />
-                        </div>
-                        <div className='hidden lg:block absolute w-full h-auto top-0 right-0 z-[1] bounceOpt04'>
-                              <Image src='/assets/ornament/oo-4.svg' width={1920} height={1920} alt='Ornament' className='w-full h-full object-cover opacity-20' />
-                        </div> */}
-
+                  <main className="w-full h-auto pt-0 lg:mb-[100px] mb-[50px] grid grid-cols-1 relative z-10 overflow-hidden font-smooth">
                         {/* Header */}
                         <div data-aos='fade-right' className='container_section flex flex-col gap-y-4 lg:mb-[32px] mb-4 relative-z-[5]'>
                               <h2 className='text_title text-center'>Amazing Group</h2>

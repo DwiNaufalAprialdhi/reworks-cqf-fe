@@ -11,6 +11,8 @@ import Navbar from '@/components/layouts/Navbar'
 import NewsUpdate from '@/components/layouts/NewsUpdate'
 import OptionProgram from '@/components/layouts/OptionProgram'
 import OrnamentHero from '@/components/ui/OrnamentHero'
+import OrnamentInspiration from '@/components/ui/OrnamentInspiration'
+import OrnamentMitra from '@/components/ui/OrnamentMitra'
 import Head from 'next/head'
 import React from 'react'
 
@@ -28,12 +30,18 @@ export default function index() {
         <Event />
       </div>
       <OptionProgram />
-      <Inspiration />
-      <ChoiceDonation />
-      <Bussines />
-      <Mitra />
-      <AmazingGroup />
-      <NewsUpdate />
+      <div className="w-full h-max relative masking">
+        <OrnamentInspiration />
+        <Inspiration />
+        <ChoiceDonation />
+        <Bussines />
+      </div>
+      <div className="w-full h-max relative masking">
+        <OrnamentMitra />
+        <Mitra />
+        <AmazingGroup />
+        <NewsUpdate />
+      </div>
       <Banner />
       <Footer />
     </>

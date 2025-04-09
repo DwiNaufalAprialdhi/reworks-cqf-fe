@@ -13,17 +13,17 @@ export default function Privacy() {
             <>
                   <main className="hero_main w-full h-auto lg:pt-[140px] pt-[85px] lg:pb-[82px] pb-5 overflow-hidden relative">
                         {/* Ornament */}
-                        <div className='absolute -top-[100px] left-0 w-full h-auto z-[1] bounce01'>
-                              <Image src='/assets/ornament/ornament-01.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
+                        <div className='absolute -top-[450px] left-0 w-full h-auto z-[1] bounce01'>
+                              <Image src='/assets/ornament/oh-01.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
                         </div>
-                        <div className='absolute -top-[100px] left-0 w-full h-auto z-[2] bounce02'>
-                              <Image src='/assets/ornament/ornament-02.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
+                        <div className='absolute -top-[450px] left-0 w-full h-auto z-[2] bounce02'>
+                              <Image src='/assets/ornament/oh-02.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
                         </div>
-                        <div className='absolute -top-[100px] left-0 w-full h-auto z-[3] bounce03'>
-                              <Image src='/assets/ornament/ornament-03.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
+                        <div className='absolute -top-[450px] left-0 w-full h-auto z-[3] bounce03'>
+                              <Image src='/assets/ornament/oh-03.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
                         </div>
-                        <div className='absolute -top-[100px] left-0 w-full h-auto z-[4] bounce04'>
-                              <Image src='/assets/ornament/ornament-04.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
+                        <div className='absolute -top-[450px] left-0 w-full h-auto z-[4] bounce04'>
+                              <Image src='/assets/ornament/oh-04.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
                         </div>
 
                         {/* Content */}

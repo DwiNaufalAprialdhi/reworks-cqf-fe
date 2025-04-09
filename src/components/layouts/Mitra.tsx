@@ -6,7 +6,7 @@ import CardAmazingGroup from '../ui/AmazingGroup/CardAmazingGroup'
 export default function Mitra() {
       return (
             <>
-                  <main className="w-full h-auto lg:mb-[100px] mb-[50px] relative overflow-hidden font-smooth">
+                  <main className="w-full h-auto lg:mb-[100px] mb-[50px] relative z-10 overflow-hidden font-smooth">
                         {/* Content */}
                         <section className='container_section lg:px-0 px-5 relative z-10'>
                               {/* Header */}

@@ -7,7 +7,7 @@ import ButtonOnScroll from '@/components/materials/ButtonOnScroll'
 export default function Introduction() {
       return (
             <>
-                  <main className="w-full h-auto overflow-hidden relative">
+                  <main className="w-full h-auto overflow-hidden relative lg:mb-[100px] mb-[50px]">
                         <section className="container_section_view">
                               {/* Introduction */}
                               <div className="w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-[80px] gap-5 items-center mb-6">
