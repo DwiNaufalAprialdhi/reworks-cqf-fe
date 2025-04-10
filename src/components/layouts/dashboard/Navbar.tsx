@@ -97,8 +97,8 @@ export default function Navbar() {
                                           <Image src='/assets/images/profile-placeholder.png' alt='images' width={48} height={48} className='w-full h-full object-cover' />
                                     </div>
                                     <div className='flex flex-col'>
-                                          <p className='font_baloo font-semibold  text-sm leading-tight'>John Doe</p>
-                                          <p className='font_baloo font-normal text-xs leading-tight'>johndoe@gmail.com</p>
+                                          <p className='font-baloo font-semibold  text-sm leading-tight'>John Doe</p>
+                                          <p className='font-baloo font-normal text-xs leading-tight'>johndoe@gmail.com</p>
                                     </div>
                               </div>
                         </div>
@@ -121,7 +121,7 @@ export default function Navbar() {
                                     </Link>
                               </div>
                               <div className="flex flex-col items-center justify-center gap-y-3">
-                                    <h2 className='font_baloo font-medium text-base'>Follow Us</h2>
+                                    <h2 className='font-baloo font-medium text-base'>Follow Us</h2>
                                     <div className='flex items-center justify-center gap-x-6'>
                                           <div className='w-[32px] h-[32px] bg-theme-secondary rounded-full flex items-center justify-center'>
                                                 <Icon name='facebook' className='w-4 h-4 text-white' />

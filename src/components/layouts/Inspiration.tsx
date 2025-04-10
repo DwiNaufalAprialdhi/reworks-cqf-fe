@@ -85,7 +85,7 @@ export default function Inspiration() {
                         </section>
 
                         {/* Progress Bar Pagination and Navigation */}
-                        <section data-aos='fade-left' className="container_section lg:px-0 px-5 relative z-10 flex items-center justify-between lg:gap-14 gap-5">
+                        <section className="container_section lg:px-0 px-5 relative z-10 flex items-center justify-between lg:gap-14 gap-5">
                               {/* Progress Bar Pagination */}
                               <div className="flex-grow w-full md:h-2 h-[7px] bg-[#D0D0D0] rounded-full relative">
                                     <div

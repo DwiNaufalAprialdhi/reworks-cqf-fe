@@ -26,7 +26,7 @@ export default function CardStructure(props: Props) {
                                     className='w-full h-full object-cover'
                               />
                         </div>
-                        <h2 className='font_baloo font-semibold lg:text-[24px] text-base lg:leading-[30px] leading-normal lg:mb-2 mb-1'>
+                        <h2 className='font-baloo font-semibold lg:text-[24px] text-base lg:leading-[30px] leading-normal lg:mb-2 mb-1'>
                               {props.name}
                         </h2>
                         <h3 className='font_nunito font-normal lg:text-sm text-xs text-theme-ascent lg:mb-5 mb-4'>

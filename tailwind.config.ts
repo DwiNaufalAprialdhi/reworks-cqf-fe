@@ -17,6 +17,7 @@ export default {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        baloo: ["Baloo2", "cursive"],
       },
       colors: {
         theme: {
