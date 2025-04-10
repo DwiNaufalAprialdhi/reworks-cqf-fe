@@ -7,7 +7,7 @@ export default function Banner() {
       return (
             <main className='w-full h-auto overflow-hidden pb-[100px] lg:pt-[70px] pt-[50px] lg:pb-0 font-smooth relative z-10'>
                   <section className='container_section px-5 lg:px-0'>
-                        <div data-aos='fade-up' className='w-full h-auto lg:p-10 p-5 rounded-[24px] overflow-hidden flex flex-col lg:gap-y-6 gap-y-5 relative group'>
+                        <div data-aos='fade-right' className='w-full h-auto lg:p-10 p-5 rounded-[24px] overflow-hidden flex flex-col lg:gap-y-6 gap-y-5 relative group'>
                               {/* Image */}
                               <div className='absolute w-full h-full top-0 left-0 group-hover:scale-110 duration-1000 z-[1]'>
                                     <Image src='/assets/images/banner.svg' width={718} height={400} alt='Banner' className='w-full h-full object-cover' />

@@ -10,7 +10,7 @@ export default function Footer() {
                   <main className='hidden lg:block w-full pt-[100px] pb-[50px] h-auto overflow-hidden relative z-10 font-smooth'>
                         {/* Footer */}
                         <footer className='container_section relative z-[8]'>
-                              <div data-aos='fade-up' className='w-full grid grid-cols-3 gap-[50px]'>
+                              <div data-aos='fade-right' className='w-full grid grid-cols-3 gap-[50px]'>
                                     {/* Column 1 */}
                                     <div className='w-full col-span-1 flex flex-col'>
                                           <Link href='#' className='block'>
