@@ -16,7 +16,7 @@ export default function ChoiceDonation() {
                   <main className="inspiration w-full h-auto relative z-[10] overflow-hidden font-smooth">
                         <section className='container_section relative z-10'>
                               {/* Header */}
-                              <div data-aos='fade-right' className='flex flex-col items-center justify-center gap-y-4 lg:mb-[32px] mb-5'>
+                              <div className='flex flex-col items-center justify-center gap-y-4 lg:mb-[32px] mb-5'>
                                     <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight text-center'>Donasi Pilihan</h2>
                                     <div className='flex md:flex-row flex-col md:items-center items-start md:justify-between justify-start gap-6'>
                                           <p className='w-full font-normal text-base text-theme-secondary text-center'>
@@ -25,7 +25,7 @@ export default function ChoiceDonation() {
                                     </div>
                               </div>
                               {/* Tab Menu */}
-                              <div data-aos='fade-right' className='w-full h-max overflow-x-scroll scroll-smooth lg:px-0 px-5'>
+                              <div className='w-full h-max overflow-x-scroll scroll-smooth lg:px-0 px-5'>
                                     <div className='w-max h-max mx-auto p-2 bg-theme-ascent/5 rounded-full flex items-center justify-center lg:gap-6 gap-3 flex-shrink-0'>
                                           <ButtonTabMenu title={'Semua Kategori'} defaultChecked={true} name={'buttonTabMenuDonation'} />
                                           <ButtonTabMenu title={'Humanity'} name={'buttonTabMenuDonation'} />
@@ -35,7 +35,7 @@ export default function ChoiceDonation() {
                               </div>
                         </section>
                         {/* Swiper */}
-                        <section data-aos='fade-left' className="relative z-10 w-full h-max flex justify-center lg:my-[32px] my-5">
+                        <section className="relative z-10 w-full h-max flex justify-center lg:my-[32px] my-5">
                               <div className="w-full lg:max-w-[1200px] md:max-w-[696px] max-w-none md:pl-0 pl-5 pr-5">
                                     <Swiper
                                           onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -84,7 +84,7 @@ export default function ChoiceDonation() {
                         </section>
 
                         {/* Progress Bar Pagination and Navigation */}
-                        <section data-aos='fade-left' className="container_section lg:px-0 px-5 relative z-10 flex items-center justify-between lg:gap-14 gap-5">
+                        <section className="container_section lg:px-0 px-5 relative z-10 flex items-center justify-between lg:gap-14 gap-5">
                               {/* Progress Bar Pagination */}
                               <div className="flex-grow w-full md:h-2 h-[7px] bg-[#D0D0D0] rounded-full relative">
                                     <div

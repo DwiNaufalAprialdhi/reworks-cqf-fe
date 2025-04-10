@@ -17,7 +17,7 @@ export default function Event() {
                   <main className='w-full h-auto overflow-x-hidden relative z-[7] lg:pb-[100px] pb-[50px] font-smooth'>
                         <section className='container_section_view grid lg:grid-cols-2 grid-cols-1 gap-[50px]'>
                               {/* LEFT */}
-                              <div data-aos='fade-right' className='w-full h-auto col-span-1 flex flex-col'>
+                              <div className='w-full h-auto col-span-1 flex flex-col'>
                                     {/* Animate Pulse */}
                                     <div className='max-w-max max-h-max py-1 px-2 rounded-full flex items-center justify-center bg-[#D82525] animate-pulse mb-4'>
                                           <p className='font-normal lg:text-xs text-[10px] text-white'>
@@ -43,7 +43,7 @@ export default function Event() {
                                     </Link>
                               </div>
                               {/* RIGHT */}
-                              <div data-aos='fade-left' className='w-full h-auto col-span-1 flex flex-col'>
+                              <div className='w-full h-auto col-span-1 flex flex-col'>
                                     <div className='w-full md:h-[303px] h-[243px] rounded-[16px] overflow-hidden group mb-[20px]'>
                                           <Image
                                                 src='/assets/images/thumbnail.png'

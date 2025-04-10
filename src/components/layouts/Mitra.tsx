@@ -10,7 +10,7 @@ export default function Mitra() {
                         {/* Content */}
                         <section className='container_section lg:px-0 px-5 relative z-10'>
                               {/* Header */}
-                              <div data-aos='fade-right' className='flex flex-col gap-y-4 mb-4'>
+                              <div className='flex flex-col gap-y-4 mb-4'>
                                     <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight'>Mitra Cinta Quran</h2>
                                     <div className='flex md:flex-row flex-col md:items-end items-start md:justify-between justify-start gap-6'>
                                           <p className='w-full lg:max-w-[646px] md:max-w-[400px] max-w-none font-normal text-base text-theme-secondary'>
@@ -22,7 +22,7 @@ export default function Mitra() {
                                     </div>
                               </div>
                               {/* Column */}
-                              <div data-aos='fade-left' className="w-full grid md:grid-cols-4 grid-cols-2 md:gap-6 gap-5">
+                              <div className="w-full grid md:grid-cols-4 grid-cols-2 md:gap-6 gap-5">
                                     <div className='w-full col-span-1'>
                                           <CardAmazingGroup image={'/assets/images/cqf.svg'}
                                           />

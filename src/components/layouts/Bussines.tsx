@@ -5,7 +5,7 @@ export default function Bussines() {
       return (
             <>
                   <main className='w-full h-auto lg:py-[100px] py-[50px] bg-transparent font-smooth'>
-                        <section data-aos="fade-up" className='container_section px-5 lg:px-0 grid md:grid-cols-3 grid-cols-1 lg:gap-8 gap-4'>
+                        <section className='container_section px-5 lg:px-0 grid md:grid-cols-3 grid-cols-1 lg:gap-8 gap-4'>
                               <CardBussines
                                     link={'/zakat100%'}
                                     image={'/assets/images/zakat.svg'}

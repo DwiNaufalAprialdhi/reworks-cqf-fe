@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Icon from '../Icons/Icon'
 import { motion } from 'framer-motion';
 import ButtonOutline from '../materials/ButtonOutline';
+import AOS from "aos";
 
 
 export default function Navbar() {
@@ -59,12 +60,19 @@ export default function Navbar() {
             };
       }, [lastScrollY]);
 
+      useEffect(() => {
+            AOS.init({
+                  duration: 1000, // Durasi animasi dalam milidetik
+                  once: true, // Apakah animasi hanya dijalankan sekali
+            });
+      }, []);
+
       return (
             <>
                   {/* DESKTOP */}
                   <nav className={`${isScrolled ? 'fixed w-full h-max lg:pt-0 lg:pb-0 pb-0 pt-0 z-50 bg-white' : 'fixed w-full h-max lg:pt-5 lg:pb-5 pb-3 pt-3 z-50'} transition-all duration-500 transform`}>
                         {/* Content */}
-                        <div className='w-full lg:max-w-[1200px] md:max-w-[696px] max-w-none mx-auto py-3 px-5 lg:px-0 flex items-center gap-6 transition-all duration-500 transform'>
+                        <div data-aos='fade-down' className='w-full lg:max-w-[1200px] md:max-w-[696px] max-w-none mx-auto py-3 px-5 lg:px-0 flex items-center gap-6 transition-all duration-500 transform'>
                               <div className='flex-shrink-0 flex items-center justify-start gap-[70px]'>
                                     {/* LOGO */}
                                     <Link href='/' className='w-max h-max block'>

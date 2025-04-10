@@ -30,7 +30,7 @@ export default function AmazingGroup() {
             <>
                   <main className="w-full h-auto pt-0 lg:mb-[100px] mb-[50px] grid grid-cols-1 relative z-10 overflow-hidden font-smooth">
                         {/* Header */}
-                        <div data-aos='fade-right' className='container_section flex flex-col gap-y-3 lg:mb-[32px] mb-4 relative-z-[5]'>
+                        <div className='container_section flex flex-col gap-y-3 lg:mb-[32px] mb-4 relative-z-[5]'>
                               <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight text-center'>Amazing Group</h2>
                               <p className='w-full font-normal text-base text-theme-secondary text-center'>
                                     Satu hati menggemakan Indonesia Cinta Quran
@@ -40,7 +40,7 @@ export default function AmazingGroup() {
                         {/* Content */}
                         <section className="w-full col-span-1 flex flex-col lg:gap-6 gap-4 overflow-hidden relative z-[5]">
                               {/* Running Left */}
-                              <div data-aos='fade-left' className="w-full flex items-center justify-center py-1 lg:gap-6 gap-4 running-animation-left">
+                              <div className="w-full flex items-center justify-center py-1 lg:gap-6 gap-4 running-animation-left">
                                     {infiniteData.map((item, index) => (
                                           <CardAmazingGroup
                                                 key={`${item.id}-${index}`}
@@ -50,7 +50,7 @@ export default function AmazingGroup() {
                               </div>
 
                               {/* Running Right */}
-                              <div data-aos='fade-left' className="w-full flex items-center justify-center py-1 lg:gap-6 gap-4 running-animation-right">
+                              <div className="w-full flex items-center justify-center py-1 lg:gap-6 gap-4 running-animation-right">
                                     {infiniteData.map((item, index) => (
                                           <CardAmazingGroup
                                                 key={`${item.id}-${index}`}

@@ -28,7 +28,7 @@ export default function OptionProgram() {
                         {/* Content */}
                         <section className='container_section lg:px-0 px-5 relative z-10'>
                               {/* Header */}
-                              <div data-aos='fade-right' className='flex flex-col gap-y-4 mb-4'>
+                              <div className='flex flex-col gap-y-4 mb-4'>
                                     <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight'>Program Pilihan</h2>
                                     <div className='flex md:flex-row flex-col md:items-center items-start md:justify-between justify-start gap-6'>
                                           <p className='w-full md:max-w-[450px] max-w-none font-normal text-base text-theme-secondary'>
@@ -41,7 +41,7 @@ export default function OptionProgram() {
                               </div>
                               <div className='w-full grid grid-cols-6 gap-6'>
                                     {/* Hightlight */}
-                                    <div data-aos='fade-left' className='w-full col-span-4 hidden lg:grid grid-cols-1 gap-6 mb-6'>
+                                    <div className='w-full col-span-4 hidden lg:grid grid-cols-1 gap-6 mb-6'>
                                           <Link href={'/program/1'} className='col-span-1 w-full h-[420px] rounded-[24px] relative overflow-hidden group'>
                                                 {/* layer */}
                                                 <div className='absolute w-full h-full top-0 inset-x-0 bg-black/50 z-[1]'></div>
@@ -66,7 +66,7 @@ export default function OptionProgram() {
                                           </Link>
                                     </div>
                                     {/* Child */}
-                                    <div data-aos='fade-left' className='w-full lg:col-span-2 col-span-6 grid grid-cols-1 gap-6 relative'>
+                                    <div className='w-full lg:col-span-2 col-span-6 grid grid-cols-1 gap-6 relative'>
                                           {/* Custom Navigation */}
                                           <button className="option-mobile-swiper-prev absolute top-0 left-1/2 transform -translate-x-1/2 z-[10] flex items-center justify-center cursor-pointer hover:bg-opacity-80 duration-200 group">
                                                 <Icon name='navigate' className='w-10 h-10 duration-200  text-theme-ascent rotate-90' />
