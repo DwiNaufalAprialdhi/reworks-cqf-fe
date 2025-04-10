@@ -20,7 +20,7 @@
   }
 
   body {
-    @apply font-poppins text-theme-dark text-opacity-85;
+    @apply font_poppins text-theme-dark text-opacity-85;
   }
 }
 
@@ -107,6 +107,10 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+}
+
+.font_poppins {
+  font-family: "Poppins", sans-serif;
 }
 
 .font_baloo {
