@@ -40,7 +40,7 @@ export default function Hero() {
             <>
                   <main className="w-full h-max relative z-[7] overflow-hidden lg:pb-[100px] lg:mb-[100px] pb-[50px] mb-[50px]">
                         {/* LAYER SLIDER */}
-                        <div className="w-full lg:h-[750px] h-[550px] relative z-10 lg:rounded-bl-[20%] lg:rounded-br-[55%] rounded-br-[30%] overflow-hidden grid grid-cols-1">
+                        <div className="w-full lg:h-screen h-[550px] relative z-10 lg:rounded-bl-[10%] lg:rounded-br-[40%] rounded-br-[30%] overflow-hidden grid grid-cols-1">
                               {/* SWIPER HERO */}
                               <Swiper
                                     loop={true}
@@ -68,7 +68,7 @@ export default function Hero() {
                                                             className="absolute top-0 left-0 w-full h-full object-cover z-[1]"
                                                       />
                                                       {/* Content */}
-                                                      <div className='w-full h-max mx-auto lg:max-w-[1200px] md:max-w-[696px] max-w-none relative z-[10] lg:pt-[190px] pt-[130px] px-5 pb-5 lg:px-0 lg:pb-0'>
+                                                      <div className='w-full h-max mx-auto lg:max-w-[1200px] md:max-w-[696px] max-w-none relative z-[10] lg:pt-[250px] pt-[130px] px-5 pb-5 lg:px-0 lg:pb-0'>
                                                             <div className='w-full lg:max-w-[552px] max-w-none flex flex-col'>
                                                                   <h2 className='font-bold lg:text-[48px] md:text-[40px] text-[40px] leading-tight text-white line-clamp-3 lg:mb-5 mb-4'>
                                                                         {item.title}
@@ -85,7 +85,7 @@ export default function Hero() {
                                                                         </div>
                                                                   </Link>
                                                             </div>
-                                                            <button className='absolute lg:-bottom-[80px] bottom-[15px] lg:right-0 right-5 pointer-events-auto lg:w-[60px] lg:h-[60px] md:w-[40px] md:h-[40px] w-[30px] h-[30px] rounded-full bg-white flex items-center justify-center z-[1] hover:bg-slate-100 duration-200 group'>
+                                                            <button className='absolute lg:-bottom-[220px] bottom-[15px] lg:right-0 right-5 pointer-events-auto lg:w-[60px] lg:h-[60px] md:w-[40px] md:h-[40px] w-[30px] h-[30px] rounded-full bg-white flex items-center justify-center z-[1] hover:bg-slate-100 duration-200 group'>
                                                                   <Icon name='play' className='lg:w-6 lg:h-6 md:w-5 md:h-5 w-4 h-4 group-hover:scale-110 duration-200' />
                                                             </button>
                                                       </div>
