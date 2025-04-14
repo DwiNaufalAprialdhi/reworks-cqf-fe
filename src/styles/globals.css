@@ -20,7 +20,7 @@
   }
 
   body {
-    @apply font-poppins text-theme-dark text-opacity-85;
+    @apply font-poppins text-theme-dark text-opacity-85 antialiased md:scale-[1.1] origin-top;
   }
 }
 
