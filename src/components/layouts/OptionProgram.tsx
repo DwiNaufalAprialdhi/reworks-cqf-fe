@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/navigation';
 import 'swiper/css';
@@ -8,23 +8,17 @@ import { Navigation } from 'swiper/modules';
 import Icon from '../Icons/Icon';
 
 export default function OptionProgram() {
+      const [isAtStart, setIsAtStart] = useState(true); // Status untuk slide pertama
+      const [isAtEnd, setIsAtEnd] = useState(false); // Status untuk slide terakhir
+
+      // Handle perubahan slide
+      const handleSlideChange = (swiper: { isBeginning: boolean | ((prevState: boolean) => boolean); isEnd: boolean | ((prevState: boolean) => boolean); }) => {
+            setIsAtStart(swiper.isBeginning); // Mengecek apakah berada di slide pertama
+            setIsAtEnd(swiper.isEnd); // Mengecek apakah berada di slide terakhir
+      };
       return (
             <>
                   <main className="main_option w-full h-auto pb-[50px] mb-[50px] relative overflow-hidden font-smooth">
-                        {/* Ornament */}
-                        {/* <div className='hidden lg:block absolute w-full h-auto top-0 right-0 z-[4] bounceOpt01'>
-                              <Image src='/assets/ornament/oo-1.svg' width={1920} height={1920} alt='Ornament' className='w-full h-full object-cover' />
-                        </div>
-                        <div className='hidden lg:block absolute w-full h-auto top-0 right-0 z-[3] bounceOpt02'>
-                              <Image src='/assets/ornament/oo-2.svg' width={1920} height={1920} alt='Ornament' className='w-full h-full object-cover' />
-                        </div>
-                        <div className='hidden lg:block absolute w-full h-auto top-0 right-0 z-[2] bounceOpt03'>
-                              <Image src='/assets/ornament/oo-3.svg' width={1920} height={1920} alt='Ornament' className='w-full h-full object-cover' />
-                        </div>
-                        <div className='hidden lg:block absolute w-full h-auto top-0 right-0 z-[1] bounceOpt04'>
-                              <Image src='/assets/ornament/oo-4.svg' width={1920} height={1920} alt='Ornament' className='w-full h-full object-cover opacity-20' />
-                        </div> */}
-
                         {/* Content */}
                         <section className='container_section lg:px-0 px-5 relative z-10'>
                               {/* Header */}
@@ -67,12 +61,16 @@ export default function OptionProgram() {
                                     </div>
                                     {/* Child */}
                                     <div className='w-full lg:col-span-2 col-span-6 grid grid-cols-1 gap-6 relative'>
-                                          {/* Custom Navigation */}
-                                          <button className="option-mobile-swiper-prev absolute top-0 left-1/2 transform -translate-x-1/2 z-[10] flex items-center justify-center cursor-pointer hover:bg-opacity-80 duration-200 group">
-                                                <Icon name='navigate' className='w-10 h-10 duration-200  text-theme-ascent rotate-90' />
+                                          {/* Tombol Navigasi */}
+                                          <button
+                                                className={`option-mobile-swiper-prev absolute -top-5 left-1/2 transform -translate-x-1/2 z-[10] flex items-center justify-center cursor-pointer hover:bg-opacity-80 duration-200 group ${isAtStart ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+                                          >
+                                                <Icon name="navigate" className="w-10 h-10 duration-200 text-theme-ascent rotate-90" />
                                           </button>
-                                          <button className="option-mobile-swiper-next absolute bottom-0 left-1/2 transform -translate-x-1/2 z-[10] flex items-center justify-center cursor-pointer hover:bg-opacity-80 duration-200 group">
-                                                <Icon name='navigate' className='w-10 h-10 duration-200  text-theme-ascent -rotate-90' />
+                                          <button
+                                                className={`option-mobile-swiper-next absolute bottom-0 left-1/2 transform -translate-x-1/2 z-[10] flex items-center justify-center cursor-pointer hover:bg-opacity-80 duration-200 group ${isAtEnd ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+                                          >
+                                                <Icon name="navigate" className="w-10 h-10 duration-200 text-theme-ascent -rotate-90" />
                                           </button>
                                           <Swiper
                                                 direction='vertical'
@@ -90,9 +88,10 @@ export default function OptionProgram() {
                                                       nextEl: '.option-mobile-swiper-next',
                                                       prevEl: '.option-mobile-swiper-prev',
                                                 }}
-                                                loop={true}
+                                                loop={false}
                                                 modules={[Navigation]}
                                                 className="option-mobile-swiper w-full lg:h-[870px] md:h-[630px] h-[410px] col-span-1"
+                                                onSlideChange={handleSlideChange} // Mendengarkan perubahan slide
                                           >
                                                 {/* Slide */}
                                                 {Array.from({ length: 5 }).map((_, index) => (
