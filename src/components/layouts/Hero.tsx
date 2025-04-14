@@ -7,6 +7,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import Link from 'next/link';
 import Icon from '../Icons/Icon';
+import Head from 'next/head';
 
 const dataSlider = [
       {
@@ -38,9 +39,19 @@ const dataSlider = [
 export default function Hero() {
       return (
             <>
+                  <Head>
+                        {/* Menambahkan SVG clipPath global di head */}
+                        <svg width="0" height="0">
+                              <defs>
+                                    <clipPath id="hero-clip" clipPathUnits="objectBoundingBox">
+                                          <path d="M0,0 H1 V0.7 C0.75,1,0.25,1,0,0.9 Z" />
+                                    </clipPath>
+                              </defs>
+                        </svg>
+                  </Head>
                   <main className="w-full h-max relative z-[7] overflow-hidden lg:pb-[100px] lg:mb-[100px] pb-[50px] mb-[50px]">
                         {/* LAYER SLIDER */}
-                        <div className="w-full lg:h-screen h-[550px] relative z-10 lg:rounded-bl-[10%] lg:rounded-br-[40%] rounded-br-[30%] overflow-hidden grid grid-cols-1">
+                        <div className="w-full lg:h-[920px] h-[600px] relative z-10 overflow-hidden grid grid-cols-1" style={{ clipPath: "url(#hero-clip)" }}>
                               {/* SWIPER HERO */}
                               <Swiper
                                     loop={true}
@@ -85,7 +96,7 @@ export default function Hero() {
                                                                         </div>
                                                                   </Link>
                                                             </div>
-                                                            <button className='absolute lg:-bottom-[220px] bottom-[15px] lg:right-0 right-5 pointer-events-auto lg:w-[60px] lg:h-[60px] md:w-[40px] md:h-[40px] w-[30px] h-[30px] rounded-full bg-white flex items-center justify-center z-[1] hover:bg-slate-100 duration-200 group'>
+                                                            <button className='absolute lg:-bottom-[160px] bottom-[15px] lg:right-0 right-5 pointer-events-auto lg:w-[60px] lg:h-[60px] md:w-[40px] md:h-[40px] w-[30px] h-[30px] rounded-full bg-white flex items-center justify-center z-[1] hover:bg-slate-100 duration-200 group'>
                                                                   <Icon name='play' className='lg:w-6 lg:h-6 md:w-5 md:h-5 w-4 h-4 group-hover:scale-110 duration-200' />
                                                             </button>
                                                       </div>
@@ -96,7 +107,7 @@ export default function Hero() {
                               {/* PAGINATION */}
                               <div className='absolute top-0 left-0 w-full h-full bg-transparent z-20 pointer-events-none'>
                                     <div className="w-full lg:max-w-[1200px] md:max-w-[696px] max-w-none mx-auto h-full bg-transparent relative">
-                                          <div className="absolute w-max bg-transparent lg:bottom-44 md:bottom-16 bottom-16 lg:left-0 left-1/2 lg:-translate-x-0 -translate-x-1/2 z-10 pointer-events-auto">
+                                          <div className="absolute w-max bg-transparent lg:bottom-60 md:bottom-16 bottom-16 lg:left-0 left-1/2 lg:-translate-x-0 -translate-x-1/2 z-10 pointer-events-auto">
                                                 <div className="new-hero-swiper-pagination"></div>
                                           </div>
                                     </div>
