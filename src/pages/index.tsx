@@ -3,6 +3,7 @@ import Banner from '@/components/layouts/Banner'
 import Bussines from '@/components/layouts/Bussines'
 import ChoiceDonation from '@/components/layouts/ChoiceDonation'
 import Event from '@/components/layouts/Event'
+import FloatWhatsapp from '@/components/layouts/FloatWhatsapp'
 import Footer from '@/components/layouts/Footer'
 import Hero from '@/components/layouts/Hero'
 import Inspiration from '@/components/layouts/Inspiration'
@@ -48,6 +49,7 @@ export default function index() {
         <Banner />
         <Footer />
       </div>
+      <FloatWhatsapp />
     </>
   )
 }
