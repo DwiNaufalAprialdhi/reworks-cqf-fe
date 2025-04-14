@@ -26,19 +26,19 @@ export default function index() {
         <meta name="description" content="Mewujudkan #IndonesiaCintaQuran" />
       </Head>
       <Navbar />
-      <div className='w-full h-max relative masking overflow-x-hidden'>
+      <div className='w-full h-max relative masking'>
         <OrnamentHero />
         <Hero />
         <Event />
       </div>
       <OptionProgram />
-      <div className="w-full h-max relative masking overflow-x-hidden">
+      <div className="w-full h-max relative masking">
         <OrnamentInspiration />
         <Inspiration />
         <ChoiceDonation />
         <Bussines />
       </div>
-      <div className="w-full h-max relative masking overflow-x-hidden">
+      <div className="w-full h-max relative masking">
         <OrnamentMitra />
         <Mitra />
         <AmazingGroup />

@@ -20,7 +20,11 @@
   }
 
   body {
-    @apply font-poppins text-theme-dark text-opacity-85;
+    @apply font-poppins text-theme-dark text-opacity-85 overflow-x-hidden scale-wrapper-view;
+  }
+
+  .scale-wrapper-view {
+    @apply transform scale-[1.1] origin-top w-full;
   }
 }
 
