@@ -24,7 +24,7 @@
   }
 
   .scale-wrapper-view {
-    @apply transform scale-[1.1] origin-top w-full;
+    @apply xl:transform xl:scale-[1.1] xl:origin-top xl:w-full;
   }
 }
 
