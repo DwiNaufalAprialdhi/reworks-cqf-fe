@@ -89,7 +89,7 @@ export default function Hero() {
                                                       <div className='w-full h-max mx-auto lg:max-w-[1200px] md:max-w-[696px] max-w-none relative z-[10] lg:pt-[250px] pt-[130px] px-5 pb-5 lg:px-0 lg:pb-0'>
                                                             <div data-aos="fade-right" className='w-full lg:max-w-[552px] max-w-none flex flex-col'>
                                                                   <h2
-                                                                        className='font-bold lg:text-[48px] md:text-[40px] text-[40px] leading-tight text-white line-clamp-3 lg:mb-5 mb-4'>
+                                                                        className='font-bold lg:text-[48px] md:text-[40px] text-[40px] leading-tight text-white line-clamp-4 lg:mb-5 mb-4'>
                                                                         {item.title}
                                                                   </h2>
                                                                   <p

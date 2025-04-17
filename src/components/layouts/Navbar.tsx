@@ -84,7 +84,7 @@ export default function Navbar() {
                                                 alt='logo'
                                                 width={100}
                                                 height={100}
-                                                className='lg:w-[150px] w-[100px] h-max object-contain'
+                                                className='lg:w-[150px] w-[110px] h-max object-contain'
                                           />
                                     </Link>
                                     {/* MENU */}
@@ -122,11 +122,11 @@ export default function Navbar() {
                                     <div className='flex-shrink-0 flex items-center lg:gap-6 gap-3'>
                                           {isSearchOpen ? <>
                                                 <button className='w-max h-max hover:opacity-60 duration-300' onClick={() => setIsSearchOpen(!isSearchOpen)}>
-                                                      <Icon name='close' className={`lg:w-4 lg:h-4 w-3 h-3 ${isScrolled ? 'text-slate-800' : 'text-white'} `} />
+                                                      <Icon name='close' className={`w-4 h-4 ${isScrolled ? 'text-slate-800' : 'text-white'} `} />
                                                 </button>
                                           </> : <>
                                                 <button className='w-max h-max hover:opacity-60 duration-300' onClick={() => setIsSearchOpen(!isSearchOpen)}>
-                                                      <Icon name='search' className={`lg:w-4 lg:h-4 w-3 h-3 ${isScrolled ? 'text-slate-800' : 'text-white'} `} />
+                                                      <Icon name='search' className={`w-4 h-4 ${isScrolled ? 'text-slate-800' : 'text-white'} `} />
                                                 </button>
                                           </>}
                                           {/* Kondisi Belum Login */}
