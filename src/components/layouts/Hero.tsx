@@ -58,7 +58,7 @@ export default function Hero() {
                   </Head>
                   <main className="w-full h-max relative z-[7] overflow-hidden lg:pb-[100px] lg:mb-[100px] pb-[50px] mb-[50px]">
                         {/* LAYER SLIDER */}
-                        <div className="w-full lg:h-[920px] h-[600px] relative z-10 overflow-hidden grid grid-cols-1" style={{ clipPath: "url(#hero-clip)" }}>
+                        <div className="w-full lg:h-[850px] h-[600px] relative z-10 overflow-hidden grid grid-cols-1" style={{ clipPath: "url(#hero-clip)" }}>
                               {/* SWIPER HERO */}
                               <Swiper
                                     loop={true}
@@ -107,7 +107,7 @@ export default function Hero() {
                                                                   </Link>
                                                             </div>
                                                             <button data-aos="fade-left"
-                                                                  className='absolute lg:-bottom-[160px] bottom-[15px] lg:right-0 right-5 pointer-events-auto lg:w-[60px] lg:h-[60px] md:w-[40px] md:h-[40px] w-[30px] h-[30px] rounded-full bg-white flex items-center justify-center z-[1] hover:bg-slate-100 duration-200 group'>
+                                                                  className='absolute lg:-bottom-[100px] bottom-[15px] lg:right-0 right-5 pointer-events-auto lg:w-[60px] lg:h-[60px] md:w-[40px] md:h-[40px] w-[30px] h-[30px] rounded-full bg-white flex items-center justify-center z-[1] hover:bg-slate-100 duration-200 group'>
                                                                   <Icon name='play' className='lg:w-6 lg:h-6 md:w-5 md:h-5 w-4 h-4 group-hover:scale-110 duration-200' />
                                                             </button>
                                                       </div>
@@ -118,7 +118,7 @@ export default function Hero() {
                               {/* PAGINATION */}
                               <div data-aos="fade-right" className='absolute top-0 left-0 w-full h-full bg-transparent z-20 pointer-events-none'>
                                     <div className="w-full lg:max-w-[1200px] md:max-w-[696px] max-w-none mx-auto h-full bg-transparent relative">
-                                          <div className="absolute w-max bg-transparent lg:bottom-60 md:bottom-16 bottom-16 lg:left-0 left-1/2 lg:-translate-x-0 -translate-x-1/2 z-10 pointer-events-auto">
+                                          <div className="absolute w-max bg-transparent lg:bottom-52 md:bottom-16 bottom-16 lg:left-0 left-1/2 lg:-translate-x-0 -translate-x-1/2 z-10 pointer-events-auto">
                                                 <div className="new-hero-swiper-pagination"></div>
                                           </div>
                                     </div>

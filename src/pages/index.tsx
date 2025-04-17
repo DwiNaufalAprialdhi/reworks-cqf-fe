@@ -26,28 +26,30 @@ export default function index() {
         <meta name="description" content="Mewujudkan #IndonesiaCintaQuran" />
       </Head>
       <Navbar />
-      <div className='w-full h-max relative masking'>
-        <OrnamentHero />
-        <Hero />
-        <Event />
-      </div>
-      <OptionProgram />
-      <div className="w-full h-max relative masking">
-        <OrnamentInspiration />
-        <Inspiration />
-        <ChoiceDonation />
-        <Bussines />
-      </div>
-      <div className="w-full h-max relative masking">
-        <OrnamentMitra />
-        <Mitra />
-        <AmazingGroup />
-        <NewsUpdate />
-      </div>
-      <div className="w-full h-max relative footer_main overflow-hidden">
-        <OrnamentFooter />
-        <Banner />
-        <Footer />
+      <div className='scale-wrapper-view'>
+        <div className='w-full h-max relative masking'>
+          <OrnamentHero />
+          <Hero />
+          <Event />
+        </div>
+        <OptionProgram />
+        <div className="w-full h-max relative masking">
+          <OrnamentInspiration />
+          <Inspiration />
+          <ChoiceDonation />
+          <Bussines />
+        </div>
+        <div className="w-full h-max relative masking">
+          <OrnamentMitra />
+          <Mitra />
+          <AmazingGroup />
+          <NewsUpdate />
+        </div>
+        <div className="w-full h-max relative footer_main overflow-hidden">
+          <OrnamentFooter />
+          <Banner />
+          <Footer />
+        </div>
       </div>
       <FloatWhatsapp />
     </>

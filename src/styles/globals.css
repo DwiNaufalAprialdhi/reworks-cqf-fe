@@ -20,11 +20,11 @@
   }
 
   body {
-    @apply font-poppins text-theme-dark text-opacity-85 overflow-x-hidden scale-wrapper-view;
+    @apply font-poppins text-theme-dark text-opacity-85 overflow-x-hidden;
   }
 
   .scale-wrapper-view {
-    @apply xl:transform xl:scale-[1.1] xl:origin-top xl:w-full;
+    @apply xl:scale-[1.1] xl:origin-top xl:w-full;
   }
 }
 
