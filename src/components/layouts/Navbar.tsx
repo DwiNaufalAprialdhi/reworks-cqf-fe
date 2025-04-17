@@ -88,7 +88,7 @@ export default function Navbar() {
                                           />
                                     </Link>
                                     {/* MENU */}
-                                    <div className='hidden lg:flex items-center gap-6'>
+                                    <div className='hidden lg:flex items-center gap-6 translate-y-1'>
                                           <Link href='/program' className={`${isScrolled ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
                                                 Program
                                           </Link>

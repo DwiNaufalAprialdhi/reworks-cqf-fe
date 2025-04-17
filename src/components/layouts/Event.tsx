@@ -14,7 +14,7 @@ export default function Event() {
       }, []);
       return (
             <>
-                  <main className='w-full h-auto overflow-x-hidden relative z-[7] lg:pb-[100px] pb-[50px] font-smooth'>
+                  <main className='w-full h-auto overflow-x-hidden relative z-[7] lg:pb-[200px] pb-[50px] font-smooth'>
                         <section className='container_section_view grid lg:grid-cols-2 grid-cols-1 md:gap-[50px] gap-5'>
                               {/* LEFT */}
                               <div className='w-full h-auto col-span-1 flex flex-col'>

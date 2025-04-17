@@ -58,7 +58,7 @@ export default function Hero() {
                   </Head>
                   <main className="w-full h-max relative z-[7] overflow-hidden lg:pb-[100px] lg:mb-[100px] pb-[50px] mb-[0px]">
                         {/* LAYER SLIDER */}
-                        <div className="w-full lg:h-[850px] h-[600px] relative z-10 overflow-hidden grid grid-cols-1" style={{ clipPath: "url(#hero-clip)" }}>
+                        <div className="w-full lg:h-screen h-[600px] relative z-10 overflow-hidden grid grid-cols-1" style={{ clipPath: "url(#hero-clip)" }}>
                               {/* SWIPER HERO */}
                               <Swiper
                                     loop={true}
@@ -107,7 +107,7 @@ export default function Hero() {
                                                                   </Link>
                                                             </div>
                                                             <button data-aos="fade-left"
-                                                                  className='absolute lg:-bottom-[100px] bottom-[15px] lg:right-0 right-5 pointer-events-auto lg:w-[60px] lg:h-[60px] md:w-[40px] md:h-[40px] w-[30px] h-[30px] rounded-full bg-white flex items-center justify-center z-[1] hover:bg-slate-100 duration-200 group'>
+                                                                  className='absolute lg:-bottom-[190px] bottom-[15px] lg:right-0 right-5 pointer-events-auto lg:w-[60px] lg:h-[60px] md:w-[40px] md:h-[40px] w-[30px] h-[30px] rounded-full bg-white flex items-center justify-center z-[1] hover:bg-slate-100 duration-200 group'>
                                                                   <Icon name='play' className='lg:w-6 lg:h-6 md:w-5 md:h-5 w-4 h-4 group-hover:scale-110 duration-200' />
                                                             </button>
                                                       </div>
