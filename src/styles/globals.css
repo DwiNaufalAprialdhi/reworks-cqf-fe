@@ -1040,6 +1040,14 @@
   -webkit-mask-repeat: no-repeat;
 }
 
+/* Hilangkan masking di mobile */
+@media (max-width: 768px) {
+  .footer_main {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+}
+
 @keyframes rain {
   0% {
     transform: translateY(-100%);
@@ -1123,6 +1131,33 @@
     rgba(0, 0, 0, 0) 100%
   );
   transition: all 0.3s ease;
+}
+
+.masking-before-footer {
+  position: relative;
+  background: rgba(255, 255, 255, 0.95); /* Warna lebih opaque */
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 94%,
+    /* Perbanyak area solid */ rgba(0, 0, 0, 0.5) 97%,
+    /* Tambahkan transisi halus */ rgba(0, 0, 0, 0) 100%
+      /* Makin transparan di ujung */
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 94%,
+    rgba(0, 0, 0, 0.5) 97%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  transition: all 0.3s ease;
+}
+
+/* Hilangkan masking di mobile */
+@media (max-width: 768px) {
+  .masking-before-footer {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
 }
 
 .inspiration-swiper {

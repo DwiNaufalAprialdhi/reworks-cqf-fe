@@ -56,7 +56,7 @@ export default function Hero() {
                               </defs>
                         </svg>
                   </Head>
-                  <main className="w-full h-max relative z-[7] overflow-hidden lg:pb-[100px] lg:mb-[100px] pb-[50px] mb-[50px]">
+                  <main className="w-full h-max relative z-[7] overflow-hidden lg:pb-[100px] lg:mb-[100px] pb-[50px] mb-[0px]">
                         {/* LAYER SLIDER */}
                         <div className="w-full lg:h-[850px] h-[600px] relative z-10 overflow-hidden grid grid-cols-1" style={{ clipPath: "url(#hero-clip)" }}>
                               {/* SWIPER HERO */}

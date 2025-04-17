@@ -39,7 +39,7 @@ export default function index() {
           <ChoiceDonation />
           <Bussines />
         </div>
-        <div className="w-full h-max relative masking">
+        <div className="w-full h-max relative before-footer-masking">
           <OrnamentMitra />
           <Mitra />
           <AmazingGroup />
