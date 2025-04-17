@@ -17,7 +17,7 @@ export default function Inspiration() {
                         <section className='container_section relative z-10'>
                               {/* Header */}
                               <div className='flex flex-col items-center justify-center gap-y-4 lg:mb-[32px] mb-5'>
-                                    <h2 className='font-semibold md:text-[48px] text-[42px] leading-tight text-center'>Kajian Inspiratif</h2>
+                                    <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight text-center'>Kajian Inspiratif</h2>
                                     <div className='flex md:flex-row flex-col md:items-center items-start md:justify-between justify-start gap-6'>
                                           <p className='w-full font-normal text-base text-theme-secondary text-center'>
                                                 Program kajian inspiratif dari kami untuk menemani aktivitas Sahabat Cinta Qur’an.
@@ -26,7 +26,7 @@ export default function Inspiration() {
                               </div>
                               {/* Tab Menu */}
                               <div className='w-full h-max overflow-x-scroll scroll-smooth lg:px-0 px-5'>
-                                    <div className='w-max h-max mx-auto p-2 bg-theme-ascent/5 rounded-full flex items-center justify-center lg:gap-6 gap-3 flex-shrink-0'>
+                                    <div className='w-max h-max mx-auto p-2 bg-theme-ascent/5 rounded-full flex items-center justify-center lg:gap-3 gap-2 flex-shrink-0'>
                                           <ButtonTabMenu title={'Semua Kajian'} defaultChecked={true} name={'buttonTabMenu'} />
                                           <ButtonTabMenu title={'Pilihan'} name={'buttonTabMenu'} />
                                           <ButtonTabMenu title={'Saat ini'} name={'buttonTabMenu'} />

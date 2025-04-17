@@ -86,14 +86,14 @@ export default function Hero() {
                                                             className="absolute top-0 left-0 w-full h-full object-cover z-[1]"
                                                       />
                                                       {/* Content */}
-                                                      <div className='w-full h-max mx-auto lg:max-w-[1200px] md:max-w-[696px] max-w-none relative z-[10] lg:pt-[250px] pt-[130px] px-5 pb-5 lg:px-0 lg:pb-0'>
+                                                      <div className='w-full h-max mx-auto lg:max-w-[1200px] md:max-w-[696px] max-w-none relative z-[10] lg:pt-[250px] pt-[150px] px-5 pb-5 lg:px-0 lg:pb-0'>
                                                             <div data-aos="fade-right" className='w-full lg:max-w-[552px] max-w-none flex flex-col'>
                                                                   <h2
-                                                                        className='font-bold lg:text-[48px] md:text-[40px] text-[40px] leading-tight text-white line-clamp-4 lg:mb-5 mb-4'>
+                                                                        className='font-bold lg:text-[48px] md:text-[40px] text-[32px] leading-tight text-white lg:mb-5 mb-4'>
                                                                         {item.title}
                                                                   </h2>
                                                                   <p
-                                                                        className='lg:font-normal font-semibold lg:text-base text-sm text-[#E9E9E9] leading-tight lg:mb-[32px] mb-6'>
+                                                                        className='font-normal lg:text-base text-xs text-[#E9E9E9] leading-tight lg:mb-[32px] mb-6'>
                                                                         {item.description}
                                                                   </p>
                                                                   <Link
