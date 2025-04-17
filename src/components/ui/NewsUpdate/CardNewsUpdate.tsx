@@ -18,7 +18,7 @@ export default function CardNewsUpdate(props: Props) {
             <>
                   <Link href={props.link} className='w-full h-max flex flex-col rounded-[16px] overflow-hidden shadow-md bg-white md:hover:-translate-y-1 duration-300 transition-all transform'>
                         {/* image */}
-                        <div className='w-full h-[360px] rounded-t-[16px] overflow-hidden'>
+                        <div className='w-full md:h-[369px] h-[200px] rounded-t-[16px] overflow-hidden'>
                               <Image
                                     src={props.image}
                                     alt='news-update'
