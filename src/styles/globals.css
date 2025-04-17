@@ -1133,7 +1133,7 @@
   transition: all 0.3s ease;
 }
 
-.masking-before-footer {
+.hero-masking {
   position: relative;
   background: rgba(255, 255, 255, 0.95); /* Warna lebih opaque */
   mask-image: linear-gradient(
@@ -1154,7 +1154,34 @@
 
 /* Hilangkan masking di mobile */
 @media (max-width: 768px) {
-  .masking-before-footer {
+  .hero-masking {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+}
+
+.before-footer-masking {
+  position: relative;
+  background: rgba(255, 255, 255, 0.95); /* Warna lebih opaque */
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 94%,
+    /* Perbanyak area solid */ rgba(0, 0, 0, 0.5) 97%,
+    /* Tambahkan transisi halus */ rgba(0, 0, 0, 0) 100%
+      /* Makin transparan di ujung */
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 94%,
+    rgba(0, 0, 0, 0.5) 97%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  transition: all 0.3s ease;
+}
+
+/* Hilangkan masking di mobile */
+@media (max-width: 768px) {
+  .before-footer-masking {
     mask-image: none;
     -webkit-mask-image: none;
   }

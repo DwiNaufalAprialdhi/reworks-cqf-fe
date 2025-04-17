@@ -15,7 +15,7 @@ export default function Event() {
       return (
             <>
                   <main className='w-full h-auto overflow-x-hidden relative z-[7] lg:pb-[100px] pb-[50px] font-smooth'>
-                        <section className='container_section_view grid lg:grid-cols-2 grid-cols-1 gap-[50px]'>
+                        <section className='container_section_view grid lg:grid-cols-2 grid-cols-1 md:gap-[50px] gap-5'>
                               {/* LEFT */}
                               <div className='w-full h-auto col-span-1 flex flex-col'>
                                     {/* Animate Pulse */}
@@ -33,7 +33,7 @@ export default function Event() {
                                           Lorem ipsum dolor sit amet consectetur. Proin mattis vitae phasellus diam velit viverra. Mauris consectetur ut leo lacus in lectus. Nunc viverra morbi sapien consequat amet tellus dignissim. Interdum velit adipiscing scelerisque massa sed tincidunt porttitor condimentum.
                                     </p>
                                     {/* CTA */}
-                                    <Link href='#' className="w-max flex items-center justify-start gap-2 bg-theme-ascent hover:bg-opacity-85 duration-300 py-[10px] px-[14px] rounded-full mt-[50px]">
+                                    <Link href='#' className="w-max flex items-center justify-start gap-2 bg-theme-ascent hover:bg-opacity-85 duration-300 py-[10px] px-[14px] rounded-full md:mt-[50px] mt-5">
                                           <h2 className='font-semibold lg:text-base text-sm text-white'>
                                                 Daftar Sekarang
                                           </h2>

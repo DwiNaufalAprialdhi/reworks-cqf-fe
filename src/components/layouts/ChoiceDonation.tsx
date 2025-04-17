@@ -19,7 +19,7 @@ export default function ChoiceDonation() {
                               <div className='flex flex-col items-center justify-center gap-y-4 lg:mb-[32px] mb-5'>
                                     <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight text-center'>Donasi Pilihan</h2>
                                     <div className='flex md:flex-row flex-col md:items-center items-start md:justify-between justify-start gap-6'>
-                                          <p className='w-full font-normal text-base text-theme-secondary text-center'>
+                                          <p className='w-full px-5 font-normal text-base text-theme-secondary text-center'>
                                                 Pilih dan salurkan donasi melalui program-program kami yang berarti bagi sahabat Cinta quran.
                                           </p>
                                     </div>

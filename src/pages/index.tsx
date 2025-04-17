@@ -27,7 +27,7 @@ export default function index() {
       </Head>
       <Navbar />
       <div className='scale-wrapper-view'>
-        <div className='w-full h-max relative masking'>
+        <div className='w-full h-max relative hero-masking'>
           <OrnamentHero />
           <Hero />
           <Event />

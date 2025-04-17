@@ -32,7 +32,7 @@ export default function AmazingGroup() {
                         {/* Header */}
                         <div className='container_section flex flex-col gap-y-3 lg:mb-[32px] mb-4 relative-z-[5]'>
                               <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight text-center'>Amazing Group</h2>
-                              <p className='w-full font-normal text-base text-theme-secondary text-center'>
+                              <p className='w-full px-5 font-normal text-base text-theme-secondary text-center'>
                                     Satu hati menggemakan Indonesia Cinta Quran
                               </p>
                         </div>
