@@ -1191,6 +1191,10 @@
   overflow: visible !important;
 }
 
+.bussines-swiper {
+  overflow: visible !important;
+}
+
 .custom-clipped-slider {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
