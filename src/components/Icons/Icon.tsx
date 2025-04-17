@@ -608,6 +608,11 @@ const icons = {
             </svg>
 
       ),
+      navSwiper: (
+            <svg className="" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M36 16.3875L24 28.3875L12 16.3875L8 20.3875L24 36.3875L40 20.3875L36 16.3875Z" fill="currentColor" />
+            </svg>
+      ),
 };
 
 // Komponen Icon

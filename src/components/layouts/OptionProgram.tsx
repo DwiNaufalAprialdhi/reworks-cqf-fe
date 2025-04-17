@@ -65,12 +65,12 @@ export default function OptionProgram() {
                                           <button
                                                 className={`option-mobile-swiper-prev absolute -top-5 left-1/2 transform -translate-x-1/2 z-[10] flex items-center justify-center cursor-pointer hover:bg-opacity-80 duration-200 group ${isAtStart ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
                                           >
-                                                <Icon name="navigate" className="md:w-10 md:h-10 w-8 h-8 duration-200 text-theme-ascent rotate-90" />
+                                                <Icon name="navSwiper" className="md:w-10 md:h-10 w-8 h-8 duration-200 text-theme-ascent rotate-180" />
                                           </button>
                                           <button
                                                 className={`option-mobile-swiper-next absolute lg:bottom-0 -bottom-5 left-1/2 transform -translate-x-1/2 z-[10] flex items-center justify-center cursor-pointer hover:bg-opacity-80 duration-200 group ${isAtEnd ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
                                           >
-                                                <Icon name="navigate" className="md:w-10 md:h-10 w-8 h-8 duration-200 text-theme-ascent -rotate-90" />
+                                                <Icon name="navSwiper" className="md:w-10 md:h-10 w-8 h-8 duration-200 text-theme-ascent" />
                                           </button>
                                           <Swiper
                                                 direction='vertical'

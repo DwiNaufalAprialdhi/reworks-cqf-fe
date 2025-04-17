@@ -99,13 +99,13 @@ export default function ChoiceDonation() {
                                           className="choice-donation-button-prev"
                                           onClick={() => swiperRef.current?.slidePrev()} // ✅ Tidak error lagi
                                     >
-                                          <Icon name="navigate" className="md:w-8 md:h-8 w-7 h-7 text-theme-ascent" />
+                                          <Icon name="navSwiper" className="md:w-8 md:h-8 w-7 h-7 text-theme-ascent rotate-90" />
                                     </button>
                                     <button
                                           className="choice-donation-button-next"
                                           onClick={() => swiperRef.current?.slideNext()} // ✅ Tidak error lagi
                                     >
-                                          <Icon name="navigate" className="md:w-8 md:h-8 w-7 h-7 text-theme-ascent rotate-180" />
+                                          <Icon name="navSwiper" className="md:w-8 md:h-8 w-7 h-7 text-theme-ascent -rotate-90" />
                                     </button>
                               </div>
                         </section>
