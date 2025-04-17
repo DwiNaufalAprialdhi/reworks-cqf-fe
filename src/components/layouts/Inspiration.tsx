@@ -17,7 +17,7 @@ export default function Inspiration() {
                         <section className='container_section relative z-10'>
                               {/* Header */}
                               <div className='flex flex-col items-center justify-center gap-y-4 lg:mb-[32px] mb-5'>
-                                    <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight text-center'>Kajian Inspiratif</h2>
+                                    <h2 className='font-semibold md:text-[48px] text-[42px] leading-tight text-center'>Kajian Inspiratif</h2>
                                     <div className='flex md:flex-row flex-col md:items-center items-start md:justify-between justify-start gap-6'>
                                           <p className='w-full font-normal text-base text-theme-secondary text-center'>
                                                 Program kajian inspiratif dari kami untuk menemani aktivitas Sahabat Cinta Qur’an.

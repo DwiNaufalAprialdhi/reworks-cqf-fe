@@ -12,7 +12,7 @@ export default function NewsUpdate() {
                         <section className='container_section lg:px-0 px-5 relative z-10'>
                               {/* Header */}
                               <div className='flex flex-col gap-y-4 mb-4'>
-                                    <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight'>News & Updates</h2>
+                                    <h2 className='font-semibold md:text-[48px] text-[42px] leading-tight'>News & Updates</h2>
                                     <div className='flex md:flex-row flex-col md:items-end items-start md:justify-between justify-start gap-6'>
                                           <p className='w-full lg:max-w-[646px] md:max-w-[400px] max-w-none font-normal text-base text-theme-secondary'>
                                                 Berbagai hikmah sepanjang perjalanan Cinta Quran Foundation menuju peradaban dunia yang lebih baik
@@ -30,7 +30,7 @@ export default function NewsUpdate() {
                                                 spaceBetween={24}
                                                 breakpoints={{
                                                       0: {
-                                                            slidesPerView: 1.2,
+                                                            slidesPerView: 1.1,
                                                             spaceBetween: 20,
                                                       },
                                                       768: {

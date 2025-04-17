@@ -25,7 +25,7 @@ export default function Event() {
                                           </p>
                                     </div>
                                     {/* Title */}
-                                    <h2 className='font-semibold md:text-[48px] text-[24px] leading-tight mb-4'>
+                                    <h2 className='font-semibold md:text-[48px] text-[42px] leading-tight mb-4'>
                                           Rise of The Promised Land
                                     </h2>
                                     {/* Desc */}
@@ -33,7 +33,7 @@ export default function Event() {
                                           Lorem ipsum dolor sit amet consectetur. Proin mattis vitae phasellus diam velit viverra. Mauris consectetur ut leo lacus in lectus. Nunc viverra morbi sapien consequat amet tellus dignissim. Interdum velit adipiscing scelerisque massa sed tincidunt porttitor condimentum.
                                     </p>
                                     {/* CTA */}
-                                    <Link href='#' className="w-max flex items-center justify-start gap-2 bg-theme-ascent hover:bg-opacity-85 duration-300 py-[10px] px-[14px] rounded-full md:mt-[50px] mt-5">
+                                    <Link href='#' className="w-max flex items-center justify-start gap-2 bg-theme-ascent hover:bg-opacity-85 duration-300 py-[10px] px-[14px] rounded-full md:mt-[35px] mt-5">
                                           <h2 className='font-semibold lg:text-base text-sm text-white'>
                                                 Daftar Sekarang
                                           </h2>
