@@ -18,7 +18,7 @@ export default function OptionProgram() {
       };
       return (
             <>
-                  <main className="main_option w-full h-auto lg:pb-[100px] pb-0 relative overflow-hidden font-smooth">
+                  <main className="main_option w-full h-auto lg:pb-[100px] pb-[50px] relative overflow-hidden font-smooth">
                         {/* Content */}
                         <section className='container_section lg:px-0 px-5 relative z-10'>
                               {/* Header */}
@@ -65,12 +65,12 @@ export default function OptionProgram() {
                                           <button
                                                 className={`option-mobile-swiper-prev absolute -top-5 left-1/2 transform -translate-x-1/2 z-[10] flex items-center justify-center cursor-pointer hover:bg-opacity-80 duration-200 group ${isAtStart ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
                                           >
-                                                <Icon name="navigate" className="w-10 h-10 duration-200 text-theme-ascent rotate-90" />
+                                                <Icon name="navigate" className="md:w-10 md:h-10 w-8 h-8 duration-200 text-theme-ascent rotate-90" />
                                           </button>
                                           <button
-                                                className={`option-mobile-swiper-next absolute bottom-0 left-1/2 transform -translate-x-1/2 z-[10] flex items-center justify-center cursor-pointer hover:bg-opacity-80 duration-200 group ${isAtEnd ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+                                                className={`option-mobile-swiper-next absolute lg:bottom-0 -bottom-5 left-1/2 transform -translate-x-1/2 z-[10] flex items-center justify-center cursor-pointer hover:bg-opacity-80 duration-200 group ${isAtEnd ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
                                           >
-                                                <Icon name="navigate" className="w-10 h-10 duration-200 text-theme-ascent -rotate-90" />
+                                                <Icon name="navigate" className="md:w-10 md:h-10 w-8 h-8 duration-200 text-theme-ascent -rotate-90" />
                                           </button>
                                           <Swiper
                                                 direction='vertical'
