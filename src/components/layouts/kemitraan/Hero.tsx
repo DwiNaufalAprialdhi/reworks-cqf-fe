@@ -17,27 +17,27 @@ export default function Hero() {
             <>
                   <main className="hero_main w-full h-auto lg:pt-[140px] pt-[85px] lg:pb-[158px] pb-[50px] overflow-hidden relative">
                         {/* Ornament */}
-                        <div className='absolute -top-[350px] left-0 w-full h-auto z-[1] bounce01'>
-                              <Image src='/assets/ornament/oh-01.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
+                        <div data-aos="fade-down" className='absolute -top-[250px] left-0 w-full h-auto z-[1]'>
+                              <Image src='/assets/ornament/ohd-01.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
                         </div>
-                        <div className='absolute -top-[350px] left-0 w-full h-auto z-[2] bounce02'>
-                              <Image src='/assets/ornament/oh-02.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
+                        <div data-aos="fade-down" className='absolute -top-[250px] left-0 w-full h-auto z-[2]'>
+                              <Image src='/assets/ornament/ohd-02.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
                         </div>
-                        <div className='absolute -top-[350px] left-0 w-full h-auto z-[3] bounce03'>
-                              <Image src='/assets/ornament/oh-03.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
+                        <div data-aos="fade-down" className='absolute -top-[250px] left-0 w-full h-auto z-[3]'>
+                              <Image src='/assets/ornament/ohd-03.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
                         </div>
-                        <div className='absolute -top-[350px] left-0 w-full h-auto z-[4] bounce04'>
-                              <Image src='/assets/ornament/oh-04.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
+                        <div data-aos="fade-down" className='absolute -top-[250px] left-0 w-full h-auto z-[4]'>
+                              <Image src='/assets/ornament/ohd-04.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
                         </div>
 
                         {/* Content */}
                         <section className='container_section_view grid lg:grid-cols-2 grid-cols-1 items-center lg:gap-[70px] gap-5 relative z-[5]'>
                               {/* Left */}
                               <div data-aos="fade-right" className='w-full col-span-1 lg:order-1 order-2 flex flex-col'>
-                                    <h2 className="font-bold lg:text-[48px] text-[24px] lg:leading-[58px] leading-normal text-theme-dark lg:mb-5 mb-4">
+                                    <h2 className="font-bold lg:text-[48px] text-[24px] lg:leading-[58px] leading-normal text-white lg:mb-5 mb-4">
                                           Kemitraan
                                     </h2>
-                                    <p className="font-normal lg:text-base text-sm text-theme-secondary lg:mb-6 mb-5">
+                                    <p className="font-normal lg:text-base text-sm text-theme-gray_lg lg:mb-6 mb-5">
                                           Cinta Quran Foundation siap menjadi mitra strategis Perusahaan/Lembaga/Instansi, dalam rangka mewujudkan pemberdayaan dan kemandirian umat.
                                     </p>
                                     <InputSearch />
