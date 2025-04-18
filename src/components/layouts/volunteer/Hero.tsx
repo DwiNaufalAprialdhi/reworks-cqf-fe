@@ -21,27 +21,28 @@ export default function Hero() {
             <>
                   <main className='w-full h-auto overflow-hidden lg:pb-[156px] pb-[50px] relative'>
                         {/* Ornament */}
-                        <div data-aos="fade-down" className='absolute -top-[310px] left-0 w-full h-auto z-[1]'>
+                        <div data-aos="fade-down" className='absolute lg:-top-[310px] md:-top-[120px] -top-[50px] left-0 w-full h-auto z-[1]'>
                               <Image src='/assets/ornament/ohd-01.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
                         </div>
-                        <div data-aos="fade-down" className='absolute -top-[310px] left-0 w-full h-auto z-[2]'>
+                        <div data-aos="fade-down" className='absolute lg:-top-[310px] md:-top-[120px] -top-[50px] left-0 w-full h-auto z-[2]'>
                               <Image src='/assets/ornament/ohd-02.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
                         </div>
-                        <div data-aos="fade-down" className='absolute -top-[310px] left-0 w-full h-auto z-[3]'>
+                        <div data-aos="fade-down" className='absolute lg:-top-[310px] md:-top-[120px] -top-[50px] left-0 w-full h-auto z-[3]'>
                               <Image src='/assets/ornament/ohd-03.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
                         </div>
-                        <div data-aos="fade-down" className='absolute -top-[310px] left-0 w-full h-auto z-[4]'>
+                        <div data-aos="fade-down" className='absolute lg:-top-[310px] md:-top-[120px] -top-[50px] left-0 w-full h-auto z-[4]'>
                               <Image src='/assets/ornament/ohd-04.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
                         </div>
+
 
                         {/* Content */}
                         <section className='container_section_view grid lg:grid-cols-2 grid-cols-1 lg:gap-[80px] gap-5 relative z-[5]'>
                               {/* Left */}
                               <div data-aos="fade-right" className='w-full lg:pt-[160px] pt-0 col-span-1 lg:order-1 order-2 flex flex-col'>
-                                    <h2 className="font-bold lg:text-[48px] text-[24px] lg:leading-[58px] leading-normal text-white lg:mb-5 mb-4">
+                                    <h2 className="font-bold lg:text-[48px] text-[24px] lg:leading-[58px] leading-normal lg:text-white text-theme-dark lg:mb-5 mb-4">
                                           Volunteer
                                     </h2>
-                                    <p className="font-normal lg:text-base text-sm text-theme-gray_lg lg:mb-6 mb-5">
+                                    <p className="font-normal lg:text-base text-sm lg:text-theme-gray_lg text-theme-secondary lg:mb-6 mb-5">
                                           Bergabung menjadi volunteer CintaQuran & sebarkan kebahagiaan serta kebaikan.
                                     </p>
                                     <InputSearch />
