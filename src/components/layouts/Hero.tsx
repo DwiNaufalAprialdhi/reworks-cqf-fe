@@ -13,7 +13,7 @@ import AOS from "aos";
 const dataSlider = [
       {
             id: 1,
-            image: '/assets/images/highlight-01.svg',
+            image: '/assets/images/discover-hero.png',
             title: 'Dukung Program Dakwah Syiar Qur’an Project 01.',
             description: 'Menumbuhkan motivasi agar masyarakat mencintai Alquran dengan program-program islami terbaik dan kreatif.',
             link: '#',
@@ -21,7 +21,7 @@ const dataSlider = [
       },
       {
             id: 2,
-            image: '/assets/images/highlight-01.svg',
+            image: '/assets/images/discover-hero.png',
             title: 'Dukung Program Dakwah Syiar Qur’an Project 02.',
             description: 'Menumbuhkan motivasi agar masyarakat mencintai Alquran dengan program-program islami terbaik dan kreatif.',
             link: '#',
@@ -29,7 +29,7 @@ const dataSlider = [
       },
       {
             id: 3,
-            image: '/assets/images/highlight-01.svg',
+            image: '/assets/images/discover-hero.png',
             title: 'Dukung Program Dakwah Syiar Qur’an Project 03.',
             description: 'Menumbuhkan motivasi agar masyarakat mencintai Alquran dengan program-program islami terbaik dan kreatif.',
             link: '#',
