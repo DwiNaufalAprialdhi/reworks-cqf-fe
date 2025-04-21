@@ -17,7 +17,7 @@ export default function NewsUpdate() {
                                           <p className='w-full lg:max-w-[646px] md:max-w-[400px] max-w-none font-normal text-base text-theme-secondary'>
                                                 Berbagai hikmah sepanjang perjalanan Cinta Quran Foundation menuju peradaban dunia yang lebih baik
                                           </p>
-                                          <Link href="#" className='font-normal lg:text-base text-sm text-theme-ascent hover:text-opacity-70 duration-300'>
+                                          <Link href="/update" className='font-normal lg:text-base text-sm text-theme-ascent hover:text-opacity-70 duration-300'>
                                                 Lihat Selengkapnya
                                           </Link>
                                     </div>

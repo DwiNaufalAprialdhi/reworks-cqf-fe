@@ -8,7 +8,7 @@ type Props = {
       image: string
       category: string
       title: string
-      description: string
+      description?: string
       time: string
       views: string
 }

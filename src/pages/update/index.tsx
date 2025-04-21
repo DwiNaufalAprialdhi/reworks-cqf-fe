@@ -1,6 +1,7 @@
 import Footer from '@/components/layouts/Footer'
 import Navbar from '@/components/layouts/Navbar'
 import Hero from '@/components/layouts/update/Hero'
+import Introduction from '@/components/layouts/update/Introduction'
 import Head from 'next/head'
 import React from 'react'
 
@@ -12,6 +13,7 @@ export default function index() {
                   </Head>
                   <Navbar />
                   <Hero />
+                  <Introduction />
                   <Footer />
             </>
       )

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React, { useEffect } from 'react'
 import AOS from "aos";
 import Statistics from '@/components/ui/Statistics';
-import InputSearch from '../program/InputSearch';
+import InputSearch from './InputSearch';
 
 
 export default function Hero() {
@@ -14,7 +14,7 @@ export default function Hero() {
       }, []);
       return (
             <>
-                  <main className="hero_main w-full h-auto lg:pt-[140px] pt-[85px] lg:pb-[158px] pb-[50px] overflow-hidden relative">
+                  <main className="hero_main w-full h-auto lg:pt-[140px] pt-[85px] lg:pb-[250px] pb-[50px] overflow-hidden relative">
                         {/* Ornament */}
                         <div data-aos="fade-down" className='absolute lg:-top-[310px] md:-top-[120px] -top-[50px] left-0 w-full h-auto z-[1]'>
                               <Image src='/assets/ornament/ohd-01.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
