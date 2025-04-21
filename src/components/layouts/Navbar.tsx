@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react';
@@ -83,15 +84,15 @@ export default function Navbar() {
                         <div data-aos='fade-down' className='w-full lg:max-w-[1200px] md:max-w-[696px] max-w-none mx-auto py-3 px-5 lg:px-0 flex items-center gap-6 transition-all duration-500 transform'>
                               <div className='flex-shrink-0 flex items-center justify-start gap-[70px]'>
                                     {/* LOGO */}
-                                    <Link href='/' className='w-max h-max block'>
+                                    <a href='/' className='w-max h-max block'>
                                           <Image
-                                                src={isScrolled ? 'assets/logo/cqf.svg' : 'assets/logo/cqf-white.svg'}
+                                                src={isScrolled ? '/assets/logo/cqf.svg' : '/assets/logo/cqf-white.svg'}
                                                 alt='logo'
                                                 width={100}
                                                 height={100}
                                                 className='lg:w-[150px] w-[110px] h-max object-contain'
                                           />
-                                    </Link>
+                                    </a>
                                     {/* MENU */}
                                     <div className='hidden lg:flex items-center gap-6 translate-y-1'>
                                           <Link href='/program' className={`${isScrolled ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>

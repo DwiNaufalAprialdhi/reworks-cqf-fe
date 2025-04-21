@@ -7,7 +7,7 @@ import CardNewsUpdate from '@/components/ui/NewsUpdate/CardNewsUpdate'
 export default function Introduction() {
       return (
             <>
-                  <main className="w-full h-auto overflow-hidden relative lg:mb-[100px] mb-[50px]">
+                  <main className="w-full h-auto overflow-hidden relative lg:mb-[100px] mb-[50px] font-smooth">
                         <section className="container_section_view">
                               {/* List Update */}
                               <div data-aos="fade-up" className="w-full flex flex-col gap-y-6">
@@ -32,7 +32,7 @@ export default function Introduction() {
                                                       <div className='w-full lg:col-span-1 col-span-3'>
                                                             <CardNewsUpdate
                                                                   key={index}
-                                                                  link={'#'}
+                                                                  link={'/update/sedekah-barang-di-momen-ramadhan'}
                                                                   image={'/assets/images/news-update.png'}
                                                                   category={'Syiar Quran Project'}
                                                                   title={'Sedekah Barang di Momen Ramadhan'}
