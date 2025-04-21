@@ -109,7 +109,7 @@ export default function NavbarMobileView() {
 
                   {/* Overlay */}
                   <div
-                        className={`fixed top-0 inset-x-0 w-full h-full md:max-w-[480px] max-w-none mx-auto min-h-screen pb-[100px] overflow-y-auto bg-white z-[60] transform ${isOverlayVisible ? 'overlayToLeft' : 'overlayToRight'} transition-transform duration-300`}
+                        className={`fixed top-0 inset-x-0 w-full h-full md:max-w-[480px] max-w-none mx-auto min-h-screen pb-[100px] overflow-y-auto bg-white z-[60] transform ${isOverlayVisible ? 'overlayToLeft pointer-events-auto' : 'overlayToRight pointer-events-none'} transition-transform duration-300`}
                   >
                         <div className='w-full py-5 border-b border-[#D0D0D0] border-opacity-50'>
                               <div className='w-full px-5 flex items-center justify-center'>

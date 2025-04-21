@@ -847,7 +847,7 @@
 @keyframes overlayToLeft {
   0% {
     opacity: 0;
-    transform: translateX(150%);
+    transform: translateX(0);
   }
   50% {
     opacity: 0.1;
@@ -858,8 +858,24 @@
   }
 }
 
+@media (max-width: 768px) {
+  @keyframes overlayToLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(150%);
+    }
+    50% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
 .overlayToLeft {
-  animation: overlayToLeft 0.3s ease-in-out forwards;
+  animation: overlayToLeft 0.2s ease-in-out forwards;
 }
 
 @keyframes overlayToRight {
@@ -872,12 +888,28 @@
   }
   100% {
     opacity: 0;
-    transform: translateX(150%);
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes overlayToRight {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    50% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(150%);
+    }
   }
 }
 
 .overlayToRight {
-  animation: overlayToRight 0.3s ease-in-out forwards;
+  animation: overlayToRight 0.2s ease-in-out forwards;
 }
 
 /* Custom scrollbar for the scroll-bar-modal class */
