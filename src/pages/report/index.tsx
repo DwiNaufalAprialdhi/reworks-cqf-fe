@@ -5,6 +5,8 @@ import Hero from '@/components/layouts/report/Hero'
 import Footer from '@/components/layouts/Footer'
 import OnlineReport from '@/components/layouts/report/OnlineReport'
 import OfflineReport from '@/components/layouts/report/OfflineReport'
+import OrnamentFooter from '@/components/ui/OrnamentFooter'
+import Banner from '@/components/layouts/Banner'
 
 
 export default function index() {
@@ -17,7 +19,11 @@ export default function index() {
                   <Hero />
                   <OnlineReport />
                   <OfflineReport />
-                  <Footer />
+                  <div className="w-full h-max relative footer_main overflow-hidden">
+                        <OrnamentFooter />
+                        <Banner />
+                        <Footer />
+                  </div>
             </>
       )
 }

@@ -3,6 +3,7 @@ import Footer from '@/components/layouts/Footer'
 import Hero from '@/components/layouts/kemitraan/Hero'
 import ListMitra from '@/components/layouts/kemitraan/ListMitra'
 import Navbar from '@/components/layouts/Navbar'
+import OrnamentFooter from '@/components/ui/OrnamentFooter'
 import Head from 'next/head'
 import React from 'react'
 
@@ -15,8 +16,11 @@ export default function index() {
                   <Navbar />
                   <Hero />
                   <ListMitra />
-                  <Banner />
-                  <Footer />
+                  <div className="w-full h-max relative footer_main overflow-hidden">
+                        <OrnamentFooter />
+                        <Banner />
+                        <Footer />
+                  </div>
             </>
       )
 }
