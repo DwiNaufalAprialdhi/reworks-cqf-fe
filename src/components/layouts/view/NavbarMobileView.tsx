@@ -3,6 +3,7 @@ import ButtonOutline from '@/components/materials/ButtonOutline';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation';
 
 export default function NavbarMobileView() {
       const [isScrolled, setIsScrolled] = useState(false);
@@ -48,6 +49,10 @@ export default function NavbarMobileView() {
             };
       }, [lastScrollY]);
 
+      const pathname = usePathname();
+
+      const isActive = (path: string) => pathname === path;
+
       return (
             <>
                   <nav className={`fixed top-0 left-0 w-full h-auto z-50 transition-colors duration-300 ${isScrolled ? 'bg-theme-ascent' : 'bg-transparent'}`}>
@@ -75,32 +80,32 @@ export default function NavbarMobileView() {
                   <nav className={`fixed bottom-0 inset-x-0 z-[70] w-full md:max-w-[480px] max-w-none mx-auto h-auto bg-transparent transition-transform duration-300 ${isNavbarVisible ? 'translate-y-0' : 'translate-y-full'}`}>
                         <div className='container_section lg:px-0 py-3 px-5 rounded-t-[16px] flex items-center justify-around bg-white shadow-sm border-t border-[#D0D0D0] border-opacity-10'>
                               <Link className='flex flex-col items-center justify-center gap-y-1 group' href='/'>
-                                    <Icon name='home' className='w-6 h-6 text-theme-ascent group-hover:text-theme-ascent' />
-                                    <h2 className='font-normall text-[10px] leading-[20px] text-theme-ascent group-hover:text-theme-ascent'>
+                                    <Icon name='home' className={`${isActive('/') ? 'text-theme-ascent' : 'text-theme-gray'} w-6 h-6 group-hover:text-theme-ascent`} />
+                                    <h2 className={`${isActive('/') ? 'font-medium text-theme-ascent' : 'font-normal text-theme-gray'} text-[10px] leading-[20px] group-hover:text-theme-ascent`}>
                                           Home
                                     </h2>
                               </Link>
-                              <Link className='flex flex-col items-center justify-center gap-y-1 group' href='/'>
-                                    <Icon name='donation' className='w-6 h-6 text-theme-gray group-hover:text-theme-ascent' />
-                                    <h2 className='font-normall text-[10px] leading-[20px] text-theme-gray group-hover:text-theme-ascent'>
+                              <Link className='flex flex-col items-center justify-center gap-y-1 group' href='/live-donation'>
+                                    <Icon name='donation' className={`${isActive('/live-donation') ? 'text-theme-ascent' : 'text-theme-gray'} w-6 h-6 group-hover:text-theme-ascent`} />
+                                    <h2 className={`${isActive('/live-donation') ? 'font-medium text-theme-ascent' : 'font-normal text-theme-gray'} text-[10px] leading-[20px] group-hover:text-theme-ascent`}>
                                           Donasi
                                     </h2>
                               </Link>
-                              <Link className='flex flex-col items-center justify-center gap-y-1 group' href='/'>
-                                    <Icon name='program' className='w-6 h-6 text-theme-gray group-hover:text-theme-ascent' />
-                                    <h2 className='font-normall text-[10px] leading-[20px] text-theme-gray group-hover:text-theme-ascent'>
+                              <Link className='flex flex-col items-center justify-center gap-y-1 group' href='/program'>
+                                    <Icon name='program' className={`${isActive('/program') ? 'text-theme-ascent' : 'text-theme-gray'} w-6 h-6 group-hover:text-theme-ascent`} />
+                                    <h2 className={`${isActive('/program') ? 'font-medium text-theme-ascent' : 'font-normal text-theme-gray'} text-[10px] leading-[20px] group-hover:text-theme-ascent`}>
                                           Program
                                     </h2>
                               </Link>
-                              <Link className='flex flex-col items-center justify-center gap-y-1 group' href='/'>
-                                    <Icon name='kajian' className='w-6 h-6 text-theme-gray group-hover:text-theme-ascent' />
-                                    <h2 className='font-normall text-[10px] leading-[20px] text-theme-gray group-hover:text-theme-ascent'>
+                              <Link className='flex flex-col items-center justify-center gap-y-1 group' href='/kajian'>
+                                    <Icon name='kajian' className={`${isActive('/kajian') ? 'text-theme-ascent' : 'text-theme-gray'} w-6 h-6 group-hover:text-theme-ascent`} />
+                                    <h2 className={`${isActive('/kajian') ? 'font-medium text-theme-ascent' : 'font-normal text-theme-gray'} text-[10px] leading-[20px] group-hover:text-theme-ascent`}>
                                           Kajian
                                     </h2>
                               </Link>
                               <div onClick={handleMoreClick} className='flex flex-col items-center justify-center gap-y-1 group cursor-pointer'>
                                     <Icon name='more' className={`w-6 h-6 ${isOverlayVisible ? 'text-theme-ascent' : 'text-theme-gray'} group-hover:text-theme-ascent`} />
-                                    <h2 className={`font-normall text-[10px] leading-[20px] ${isOverlayVisible ? 'text-theme-ascent' : 'text-theme-gray'} group-hover:text-theme-ascent`}>
+                                    <h2 className={`font-normal text-[10px] leading-[20px] ${isOverlayVisible ? 'text-theme-ascent' : 'text-theme-gray'} group-hover:text-theme-ascent`}>
                                           Lainnya
                                     </h2>
                               </div>
