@@ -13,7 +13,7 @@ export default function Inspiration() {
       const [progress, setProgress] = useState(0);
       return (
             <>
-                  <main className="inspiration w-full h-auto lg:pb-[250px] pb-[50px] lg:pt-[100px] pt-[50px] relative z-[10] overflow-hidden font-smooth">
+                  <main className="inspiration w-full h-auto lg:pb-[100px] pb-[50px] lg:pt-[0px] pt-[50px] relative z-[10] overflow-hidden font-smooth">
                         <section className='container_section relative z-10'>
                               {/* Header */}
                               <div className='flex flex-col items-center justify-center gap-y-4 lg:mb-[32px] mb-5'>
