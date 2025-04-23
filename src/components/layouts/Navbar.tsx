@@ -76,17 +76,20 @@ export default function Navbar() {
 
       const isActive = (path: string) => pathname === path;
 
+      const isUpdatePage = router.pathname.startsWith('/update/');
+
+
       return (
             <>
                   {/* DESKTOP */}
-                  <nav className={`${isScrolled ? 'fixed w-full h-max lg:pt-0 lg:pb-0 pb-0 pt-0 z-50 bg-white' : 'fixed w-full h-max lg:pt-5 lg:pb-5 pb-3 pt-3 z-50'} transition-all duration-500 transform ${isHome ? 'xl:scale-[1.1]' : ''}`}>
+                  <nav className={`${isScrolled || isUpdatePage ? 'fixed w-full h-max lg:pt-0 lg:pb-0 pb-0 pt-0 z-50 bg-white' : 'fixed w-full h-max lg:pt-5 lg:pb-5 pb-3 pt-3 z-50'} transition-all duration-500 transform ${isHome ? 'xl:scale-[1.1]' : ''}`}>
                         {/* Content */}
                         <div data-aos='fade-down' className='w-full lg:max-w-[1200px] md:max-w-[696px] max-w-none mx-auto py-3 px-5 lg:px-0 flex items-center gap-6 transition-all duration-500 transform'>
                               <div className='flex-shrink-0 flex items-center justify-start gap-[70px]'>
                                     {/* LOGO */}
                                     <a href='/' className='w-max h-max block'>
                                           <Image
-                                                src={isScrolled ? '/assets/logo/cqf.svg' : '/assets/logo/cqf-white.svg'}
+                                                src={isScrolled || isUpdatePage ? '/assets/logo/cqf.svg' : '/assets/logo/cqf-white.svg'}
                                                 alt='logo'
                                                 width={100}
                                                 height={100}
@@ -95,22 +98,22 @@ export default function Navbar() {
                                     </a>
                                     {/* MENU */}
                                     <div className='hidden lg:flex items-center gap-6 translate-y-1'>
-                                          <Link href='/program' className={`${isScrolled ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
+                                          <Link href='/program' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
                                                 Program
                                           </Link>
-                                          <Link href='/kajian' className={`${isScrolled ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
+                                          <Link href='/kajian' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
                                                 Kajian
                                           </Link>
-                                          <Link href='/live-donation' className={`${isScrolled ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
+                                          <Link href='/live-donation' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
                                                 Donasi
                                           </Link>
-                                          <Link href='/kemitraan' className={`${isScrolled ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
+                                          <Link href='/kemitraan' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
                                                 Kemitraan
                                           </Link>
-                                          <Link href='/update' className={`${isScrolled ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
+                                          <Link href='/update' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
                                                 Update
                                           </Link>
-                                          <Link href='/contact' className={`${isScrolled ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
+                                          <Link href='/contact' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
                                                 Kontak
                                           </Link>
                                     </div>
@@ -123,20 +126,20 @@ export default function Navbar() {
                                           transition={{ duration: 0.3 }}
                                           className='overflow-hidden flex-grow'
                                     >
-                                          <input type="text" name='search' id='search' className={`${isScrolled ? 'search_navbar_scrolled' : 'search_navbar'} w-full`} placeholder='Cari...' />
+                                          <input type="text" name='search' id='search' className={`${isScrolled || isUpdatePage ? 'search_navbar_scrolled' : 'search_navbar'} w-full`} placeholder='Cari...' />
                                     </motion.div>
                                     <div className='flex-shrink-0 flex items-center lg:gap-6 gap-3'>
                                           {isSearchOpen ? <>
                                                 <button className='w-max h-max hover:opacity-60 duration-300' onClick={() => setIsSearchOpen(!isSearchOpen)}>
-                                                      <Icon name='close' className={`w-4 h-4 ${isScrolled ? 'text-slate-800' : 'text-white'} `} />
+                                                      <Icon name='close' className={`w-4 h-4 ${isScrolled || isUpdatePage ? 'text-slate-800' : 'text-white'} `} />
                                                 </button>
                                           </> : <>
                                                 <button className='w-max h-max hover:opacity-60 duration-300' onClick={() => setIsSearchOpen(!isSearchOpen)}>
-                                                      <Icon name='search' className={`w-4 h-4 ${isScrolled ? 'text-slate-800' : 'text-white'} `} />
+                                                      <Icon name='search' className={`w-4 h-4 ${isScrolled || isUpdatePage ? 'text-slate-800' : 'text-white'} `} />
                                                 </button>
                                           </>}
                                           {/* Kondisi Belum Login */}
-                                          <Link href="/auth/login" className={`${isScrolled ? 'btn_navbar_scrolled' : 'btn_navbar'} hidden lg:block `}>
+                                          <Link href="/auth/login" className={`${isScrolled || isUpdatePage ? 'btn_navbar_scrolled' : 'btn_navbar'} hidden lg:block `}>
                                                 Masuk
                                           </Link>
                                           {/* Kondisi Sudah Login */}
@@ -148,7 +151,7 @@ export default function Navbar() {
                                                             className='w-full h-full object-cover'
                                                       />
                                                 </div>
-                                                <Icon name='chevronDownv2' className={`w-4 h-4 ${isScrolled ? 'text-slate-800' : 'text-white'} `} />
+                                                <Icon name='chevronDownv2' className={`w-4 h-4 ${isScrolled || isUpdatePage ? 'text-slate-800' : 'text-white'} `} />
                                           </div> */}
                                     </div>
                               </div>

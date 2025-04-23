@@ -5,7 +5,7 @@ import Icon from '../Icons/Icon'
 
 export default function Banner() {
       return (
-            <main className='w-full h-auto overflow-hidden pb-[100px] lg:pt-[100px] pt-[0px] lg:pb-0 font-smooth relative z-10'>
+            <main className='w-full h-auto overflow-hidden pb-[100px] lg:pt-[100px] md:pt-[50px] pt-[0px] lg:pb-0 font-smooth relative z-10'>
                   <section className='container_section px-5 lg:px-0'>
                         <div className='w-full h-auto lg:py-10 lg:px-10 py-[80px] px-5 lg:rounded-[24px] rounded-[16px] overflow-hidden flex flex-col lg:gap-y-6 gap-y-5 relative group'>
                               {/* Image */}
