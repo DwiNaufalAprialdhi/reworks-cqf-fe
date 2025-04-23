@@ -56,7 +56,7 @@ export default function NewsUpdate() {
                                                 {[...Array(3)].map((_, index) => (
                                                       <SwiperSlide key={index}>
                                                             <CardNewsUpdate
-                                                                  link={'#'}
+                                                                  link={'/update/sedekah-barang-di-momen-ramadhan'}
                                                                   image={'/assets/images/news-update.png'}
                                                                   category={'Syiar Quran Project'}
                                                                   title={'Sedekah Barang di Momen Ramadhan'}

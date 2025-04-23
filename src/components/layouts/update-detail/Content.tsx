@@ -6,7 +6,7 @@ import Icon from '@/components/Icons/Icon'
 export default function Content() {
       return (
             <>
-                  <section className='container_section_view lg:pb-[0px] pb-[50px] grid grid-cols-12 lg:gap-6 gap-5 '>
+                  <section className='container_section_view lg:pb-[0px] pb-[50px] grid grid-cols-12 lg:gap-6 gap-5'>
                         {/* Grid Left */}
                         <div className='w-full lg:col-span-8 col-span-12 flex flex-col'>
                               {/* Content */}
@@ -60,8 +60,8 @@ export default function Content() {
                         </div>
 
                         {/* Grid Right */}
-                        <div className='w-full lg:col-span-4 col-span-12'>
-                              <div className='w-full h-max p-5 bg-white border border-theme-gray_lg md:rounded-2xl rounded-xl flex flex-col gap-3'>
+                        <div className='w-full lg:col-span-4 col-span-12 relative'>
+                              <div className='w-full h-max p-5 bg-white border border-theme-gray_lg md:rounded-2xl rounded-xl flex flex-col gap-3 lg:sticky lg:top-[75px] lg:inset-x-0'>
                                     {/* Title Update */}
                                     <h2 className="font-baloo font-semibold text-theme-dark md:text-2xl text-lg tracking-tight">
                                           Update Terbaru
