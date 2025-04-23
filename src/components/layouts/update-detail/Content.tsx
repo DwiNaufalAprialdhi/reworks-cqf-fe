@@ -6,7 +6,7 @@ import Icon from '@/components/Icons/Icon'
 export default function Content() {
       return (
             <>
-                  <section className='container_section_view lg:pb-[100px] pb-[50px] grid grid-cols-12 lg:gap-6 gap-5 '>
+                  <section className='container_section_view lg:pb-[0px] pb-[50px] grid grid-cols-12 lg:gap-6 gap-5 '>
                         {/* Grid Left */}
                         <div className='w-full lg:col-span-8 col-span-12 flex flex-col'>
                               {/* Content */}
