@@ -13,9 +13,19 @@ export default function Hero() {
       }, []);
       return (
             <>
-                  <main className="hero_main w-full h-auto lg:pt-[140px] pt-[85px] lg:pb-[250px] pb-[50px] overflow-hidden relative">
-                        {/* Ornament */}
-                        <div data-aos="fade-down" className='absolute lg:-top-[310px] md:-top-[120px] -top-[50px] left-0 w-full h-auto z-[1]'>
+                  <main className="lg:rounded-b-[50%] md:rounded-b-[20%] rounded-b-[0%] w-full h-auto lg:pt-[140px] pt-[85px] lg:pb-[150px] lg:mb-[50px] mb-[20px] pb-[50px] overflow-hidden relative">
+                        {/* Layer Background */}
+                        <div className='w-full h-full absolute top-0 inset-x-0 z-[1]'>
+                              <Image
+                                    src="/assets/images/discover-hero.png"
+                                    alt="discover"
+                                    width={1000} height={800}
+                                    className='w-full h-full object-cover'
+                              />
+                        </div>
+                        {/* Filter */}
+                        <div className='w-full h-full bg-gradient-to-r from-black/50 via-black/40 to-theme-ascent/80 absolute top-0 left-0 z-[2]'></div>                        {/* Ornament */}
+                        {/* <div data-aos="fade-down" className='absolute lg:-top-[310px] md:-top-[120px] -top-[50px] left-0 w-full h-auto z-[1]'>
                               <Image src='/assets/ornament/ohd-01.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
                         </div>
                         <div data-aos="fade-down" className='absolute lg:-top-[310px] md:-top-[120px] -top-[50px] left-0 w-full h-auto z-[2]'>
@@ -26,17 +36,17 @@ export default function Hero() {
                         </div>
                         <div data-aos="fade-down" className='absolute lg:-top-[310px] md:-top-[120px] -top-[50px] left-0 w-full h-auto z-[4]'>
                               <Image src='/assets/ornament/ohd-04.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
-                        </div>
+                        </div> */}
 
 
                         {/* Content */}
                         <section className='container_section_view grid lg:grid-cols-2 grid-cols-1 items-start lg:gap-[70px] gap-5 relative z-[5]'>
                               {/* Left */}
                               <div data-aos="fade-right" className='w-full col-span-1 lg:order-1 order-2 flex flex-col'>
-                                    <h2 className="font-bold lg:text-[48px] text-[24px] lg:leading-[58px] leading-normal lg:text-white text-theme-dark lg:mb-5 mb-4">
+                                    <h2 className="font-bold lg:text-[48px] text-[24px] lg:leading-[58px] leading-normal text-white lg:mb-5 mb-4">
                                           Laporan Lembaga
                                     </h2>
-                                    <p className="font-normal lg:text-base text-sm lg:text-theme-gray_lg text-theme-secondary lg:mb-6 mb-5">
+                                    <p className="font-normal lg:text-base text-sm text-theme-gray_lg lg:mb-6 mb-5">
                                           Laporan keuangan, capaian dan program-program yang telah diselenggarakan Cinta Quran Foundation.
                                     </p>
                                     <div className="w-full grid grid-cols-2 lg:gap-6 gap-2 items-center">
