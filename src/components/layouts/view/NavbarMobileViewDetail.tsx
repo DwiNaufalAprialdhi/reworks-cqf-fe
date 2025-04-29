@@ -12,7 +12,7 @@ type NavbarMobileViewDetailProps = {
 export default function NavbarMobileViewDetail(props: NavbarMobileViewDetailProps) {
       return (
             <>
-                  <nav className='fixed top-0 inset-x-0 w-full h-auto bg-theme-ascent z-50 overflow-hidden'>
+                  <nav className='fixed top-0 inset-x-0 w-full h-[52px] bg-theme-ascent z-50 overflow-hidden'>
                         {/* Ornament */}
                         <div className='absolute top-0 inset-x-0 w-full h-full z-[1]'>
                               <Image src='/assets/ornament/ornament-navmobile.svg' alt='Ornament' width={500} height={400} className='w-full h-full object-cover' />

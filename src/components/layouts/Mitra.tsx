@@ -24,35 +24,35 @@ export default function Mitra() {
                               {/* Column */}
                               <div className="w-full grid md:grid-cols-4 grid-cols-2 md:gap-6 gap-5">
                                     <div className='w-full col-span-1'>
-                                          <CardAmazingGroup image={'/assets/images/cqf.svg'}
+                                          <CardAmazingGroup className='grayscale hover:grayscale-0' image={'/assets/images/cqf.svg'}
                                           />
                                     </div>
                                     <div className='w-full col-span-1'>
-                                          <CardAmazingGroup image={'/assets/images/cqc.svg'}
+                                          <CardAmazingGroup className='grayscale hover:grayscale-0' image={'/assets/images/cqc.svg'}
                                           />
                                     </div>
                                     <div className='w-full col-span-1'>
-                                          <CardAmazingGroup image={'/assets/images/cqstore.svg'}
+                                          <CardAmazingGroup className='grayscale hover:grayscale-0' image={'/assets/images/cqstore.svg'}
                                           />
                                     </div>
                                     <div className='w-full col-span-1'>
-                                          <CardAmazingGroup image={'/assets/images/cqf.svg'}
+                                          <CardAmazingGroup className='grayscale hover:grayscale-0' image={'/assets/images/cqf.svg'}
                                           />
                                     </div>
                                     <div className='w-full col-span-1'>
-                                          <CardAmazingGroup image={'/assets/images/cqf.svg'}
+                                          <CardAmazingGroup className='grayscale hover:grayscale-0' image={'/assets/images/cqf.svg'}
                                           />
                                     </div>
                                     <div className='w-full col-span-1'>
-                                          <CardAmazingGroup image={'/assets/images/cqc.svg'}
+                                          <CardAmazingGroup className='grayscale hover:grayscale-0' image={'/assets/images/cqc.svg'}
                                           />
                                     </div>
                                     <div className='w-full col-span-1'>
-                                          <CardAmazingGroup image={'/assets/images/cqstore.svg'}
+                                          <CardAmazingGroup className='grayscale hover:grayscale-0' image={'/assets/images/cqstore.svg'}
                                           />
                                     </div>
                                     <div className='w-full col-span-1'>
-                                          <CardAmazingGroup image={'/assets/images/cqf.svg'}
+                                          <CardAmazingGroup className='grayscale hover:grayscale-0' image={'/assets/images/cqf.svg'}
                                           />
                                     </div>
                               </div>

@@ -14,7 +14,7 @@ import OptionProgram from '@/components/layouts/OptionProgram'
 import OrnamentFooter from '@/components/ui/OrnamentFooter'
 import OrnamentHero from '@/components/ui/OrnamentHero'
 import OrnamentInspiration from '@/components/ui/OrnamentInspiration'
-import OrnamentMitra from '@/components/ui/OrnamentMitra'
+// import OrnamentMitra from '@/components/ui/OrnamentMitra'
 import Head from 'next/head'
 import React from 'react'
 
@@ -40,7 +40,7 @@ export default function index() {
           <Bussines />
         </div>
         <div className="w-full h-max relative before-footer-masking">
-          <OrnamentMitra />
+          {/* <OrnamentMitra /> */}
           <Mitra />
           <AmazingGroup />
           <NewsUpdate />

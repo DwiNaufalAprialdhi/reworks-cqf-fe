@@ -55,12 +55,12 @@ export default function NavbarMobileView() {
 
       return (
             <>
-                  <nav className={`fixed top-0 left-0 w-full h-auto z-50 transition-colors duration-300 ${isScrolled ? 'bg-theme-ascent' : 'bg-transparent'}`}>
+                  <nav className={`fixed top-0 left-0 w-full h-auto z-50 transition-colors duration-300 ${isScrolled ? 'bg-theme-ascent' : 'bg-transparent'} flex items-center`}>
                         {/* Ornament */}
                         <div className={`${isScrolled ? 'block' : 'hidden'} absolute top-0 inset-x-0 w-full h-full z-[1]`}>
                               <Image src='/assets/ornament/ornament-navmobile.svg' alt='Ornament' width={500} height={400} className='w-full h-full object-cover' />
                         </div>
-                        <div className='w-full md:max-w-[480px] max-w-none mx-auto p-5 relative z-[2]'>
+                        <div className='w-full md:max-w-[480px] max-w-none mx-auto py-2 px-5 relative z-[2]'>
                               <div className='w-full relative'>
                                     {/* Input */}
                                     <input
