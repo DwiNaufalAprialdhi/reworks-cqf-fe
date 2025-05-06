@@ -12,12 +12,12 @@ type NavbarMobileViewDetailProps = {
 export default function NavbarMobileViewDetail(props: NavbarMobileViewDetailProps) {
       return (
             <>
-                  <nav className='fixed top-0 inset-x-0 w-full h-[52px] bg-theme-ascent z-50 overflow-hidden'>
+                  <nav className='fixed top-0 inset-x-0 w-full h-[52px] bg-theme-ascent z-50 overflow-hidden flex items-center'>
                         {/* Ornament */}
                         <div className='absolute top-0 inset-x-0 w-full h-full z-[1]'>
                               <Image src='/assets/ornament/ornament-navmobile.svg' alt='Ornament' width={500} height={400} className='w-full h-full object-cover' />
                         </div>
-                        <div className='w-full md:max-w-[480px] max-w-none mx-auto lg:py-4 py-3 px-5 lg:px-0 relative z-[2]'>
+                        <div className='w-full md:max-w-[480px] max-w-none mx-auto lg:py-4 py-3 px-5 lg:px-5 relative z-[2]'>
                               <div className='w-full flex items-center justify-between'>
                                     <Link href={props.link} className='flex items-center gap-x-2'>
                                           <Icon name='arrowRight' className='lg:w-4 lg:h-4 w-3 h-3 text-white rotate-180' />

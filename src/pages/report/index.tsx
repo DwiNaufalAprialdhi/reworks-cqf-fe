@@ -7,6 +7,7 @@ import OnlineReport from '@/components/layouts/report/OnlineReport'
 import OfflineReport from '@/components/layouts/report/OfflineReport'
 import OrnamentFooter from '@/components/ui/OrnamentFooter'
 import Banner from '@/components/layouts/Banner'
+import OrnamentReport from '@/components/ui/OrnamentReport'
 
 
 export default function index() {
@@ -16,7 +17,10 @@ export default function index() {
                         <title>Laporan Lembaga - CINTA QURAN FOUNDATION</title>
                   </Head>
                   <Navbar />
-                  <Hero />
+                  <div className="w-full overflow-hidden relative lg:pb-[70px] lg:mb-[70px] pb-[20px] mb-[20px]">
+                        <OrnamentReport />
+                        <Hero />
+                  </div>
                   <OnlineReport />
                   <OfflineReport />
                   <div className="w-full h-max relative footer_main overflow-hidden">

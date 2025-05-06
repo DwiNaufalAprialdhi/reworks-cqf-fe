@@ -98,24 +98,24 @@ export default function Navbar() {
                                     </a>
                                     {/* MENU */}
                                     <div className='hidden lg:flex items-center gap-6 translate-y-1'>
-                                          <Link href='/program' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
+                                          <a href='/program' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
                                                 Program
-                                          </Link>
-                                          <Link href='/kajian' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
+                                          </a>
+                                          <a href='/kajian' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
                                                 Kajian
-                                          </Link>
-                                          <Link href='/live-donation' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
+                                          </a>
+                                          <a href='/live-donation' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
                                                 Donasi
-                                          </Link>
-                                          <Link href='/kemitraan' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
+                                          </a>
+                                          <a href='/kemitraan' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
                                                 Kemitraan
-                                          </Link>
-                                          <Link href='/update' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
+                                          </a>
+                                          <a href='/update' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
                                                 Update
-                                          </Link>
-                                          <Link href='/contact' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
+                                          </a>
+                                          <a href='/contact' className={`${isScrolled || isUpdatePage ? 'menu_navbar_scrolled' : 'menu_navbar'}`}>
                                                 Kontak
-                                          </Link>
+                                          </a>
                                     </div>
                               </div>
                               <div className='flex-grow flex items-center justify-end lg:gap-6 gap-2'>
@@ -161,30 +161,30 @@ export default function Navbar() {
                   {/* Mobile */}
                   <nav className={`fixed lg:hidden bottom-0 inset-x-0 z-[70] w-full h-auto bg-transparent transition-transform duration-300 ${isNavbarVisible ? 'translate-y-0' : 'translate-y-full'}`}>
                         <div className='container_section lg:px-0 py-3 px-5 rounded-t-[16px] flex items-center justify-around bg-white shadow-sm border-t border-[#D0D0D0] border-opacity-10'>
-                              <Link className='flex flex-col items-center justify-center gap-y-1 group' href='/'>
+                              <a className='flex flex-col items-center justify-center gap-y-1 group' href='/'>
                                     <Icon name='home' className={`${isActive('/') ? 'text-theme-ascent' : 'text-theme-gray'} w-6 h-6 group-hover:text-theme-ascent`} />
                                     <h2 className={`${isActive('/') ? 'font-medium text-theme-ascent' : 'font-normal text-theme-gray'} text-[10px] leading-[20px] group-hover:text-theme-ascent`}>
                                           Home
                                     </h2>
-                              </Link>
-                              <Link className='flex flex-col items-center justify-center gap-y-1 group' href='/live-donation'>
+                              </a>
+                              <a className='flex flex-col items-center justify-center gap-y-1 group' href='/live-donation'>
                                     <Icon name='donation' className={`${isActive('/live-donation') ? 'text-theme-ascent' : 'text-theme-gray'} w-6 h-6 group-hover:text-theme-ascent`} />
                                     <h2 className={`${isActive('/live-donation') ? 'font-medium text-theme-ascent' : 'font-normal text-theme-gray'} text-[10px] leading-[20px] group-hover:text-theme-ascent`}>
                                           Donasi
                                     </h2>
-                              </Link>
-                              <Link className='flex flex-col items-center justify-center gap-y-1 group' href='/program'>
+                              </a>
+                              <a className='flex flex-col items-center justify-center gap-y-1 group' href='/program'>
                                     <Icon name='program' className={`${isActive('/program') ? 'text-theme-ascent' : 'text-theme-gray'} w-6 h-6 group-hover:text-theme-ascent`} />
                                     <h2 className={`${isActive('/program') ? 'font-medium text-theme-ascent' : 'font-normal text-theme-gray'} text-[10px] leading-[20px] group-hover:text-theme-ascent`}>
                                           Program
                                     </h2>
-                              </Link>
-                              <Link className='flex flex-col items-center justify-center gap-y-1 group' href='/kajian'>
+                              </a>
+                              <a className='flex flex-col items-center justify-center gap-y-1 group' href='/kajian'>
                                     <Icon name='kajian' className={`${isActive('/kajian') ? 'text-theme-ascent' : 'text-theme-gray'} w-6 h-6 group-hover:text-theme-ascent`} />
                                     <h2 className={`${isActive('/kajian') ? 'font-medium text-theme-ascent' : 'font-normal text-theme-gray'} text-[10px] leading-[20px] group-hover:text-theme-ascent`}>
                                           Kajian
                                     </h2>
-                              </Link>
+                              </a>
                               <div onClick={handleMoreClick} className='flex flex-col items-center justify-center gap-y-1 group cursor-pointer'>
                                     <Icon name='more' className={`w-6 h-6 ${isOverlayVisible ? 'text-theme-ascent' : 'text-theme-gray'} group-hover:text-theme-ascent`} />
                                     <h2 className={`font-normal text-[10px] leading-[20px] ${isOverlayVisible ? 'text-theme-ascent' : 'text-theme-gray'} group-hover:text-theme-ascent`}>
