@@ -1037,16 +1037,23 @@
   mask-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 0%,
-    /* Transparan di atas */ rgba(0, 0, 0, 1) 10%,
-    /* Solid hitam mendekati atas */ rgba(0, 0, 0, 1) 90%,
-    /* Solid hitam mendekati bawah */ rgba(0, 0, 0, 0) 100%
-      /* Transparan di bawah */
+    rgba(0, 0, 0, 0.4) 10%,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(0, 0, 0, 1) 65%,
+    rgba(0, 0, 0, 0.8) 80%,
+    rgba(0, 0, 0, 0.4) 90%,
+    rgba(0, 0, 0, 0) 100%
   );
   -webkit-mask-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 10%,
-    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0.4) 10%,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(0, 0, 0, 1) 65%,
+    rgba(0, 0, 0, 0.8) 80%,
+    rgba(0, 0, 0, 0.4) 90%,
     rgba(0, 0, 0, 0) 100%
   );
   mask-size: 100% 100%;

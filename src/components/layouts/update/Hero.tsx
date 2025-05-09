@@ -1,20 +1,60 @@
 import Image from 'next/image'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import AOS from "aos";
 import Statistics from '@/components/ui/Statistics';
 import InputSearch from './InputSearch';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 
 export default function Hero() {
+      const [clipId, setClipId] = useState('hero-clip-desktop');
+      const router = useRouter(); // ⬅️ Ambil router instance
+
+      // Fungsi penyesuaian ukuran
+      const updateClipPath = () => {
+            if (typeof window !== "undefined") {
+                  if (window.innerWidth < 768) {
+                        setClipId('hero-clip-mobile');
+                  } else {
+                        setClipId('hero-clip-desktop');
+                  }
+            }
+      };
+
       useEffect(() => {
             AOS.init({
-                  duration: 1000, // Durasi animasi dalam milidetik
-                  once: true, // Apakah animasi hanya dijalankan sekali
+                  duration: 1000,
+                  once: true,
             });
-      }, []);
+
+            updateClipPath(); // Jalankan pertama kali
+            window.addEventListener('resize', updateClipPath);
+
+            // Jalankan kembali saat berpindah halaman
+            router.events.on('routeChangeComplete', updateClipPath);
+
+            return () => {
+                  window.removeEventListener('resize', updateClipPath);
+                  router.events.off('routeChangeComplete', updateClipPath);
+            };
+      }, [router.events]); // ← pastikan efek ini tergantung pada events router
       return (
             <>
-                  <main className="lg:rounded-b-[50%] md:rounded-b-[20%] rounded-b-[0%] w-full h-auto lg:pt-[140px] pt-[85px] lg:pb-[200px] lg:mb-[50px] mb-[20px] pb-[50px] overflow-hidden relative">
+                  <Head>
+                        {/* Tambah 2 clipPath: desktop & mobile */}
+                        <svg width="0" height="0">
+                              <defs>
+                                    <clipPath id="hero-clip-desktop" clipPathUnits="objectBoundingBox">
+                                          <path d="M0,0 H1 V0.7 C0.75,1,0.25,1,0,0.9 Z" />
+                                    </clipPath>
+                                    <clipPath id="hero-clip-mobile" clipPathUnits="objectBoundingBox">
+                                          <path d="M0,0 H1 V0.8 C0.85,1,0.15,1,0,0.95 Z" />
+                                    </clipPath>
+                              </defs>
+                        </svg>
+                  </Head>
+                  <main className="w-full h-max lg:pt-[140px] pt-[85px] lg:pb-[180px] md:pb-[100px] pb-[80px] overflow-hidden relative z-[5]" style={{ clipPath: `url(#${clipId})` }}>
                         {/* Layer Background */}
                         <div className='w-full h-full absolute top-0 inset-x-0 z-[1]'>
                               <Image

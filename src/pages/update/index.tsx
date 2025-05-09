@@ -4,6 +4,7 @@ import Navbar from '@/components/layouts/Navbar'
 import Hero from '@/components/layouts/update/Hero'
 import Introduction from '@/components/layouts/update/Introduction'
 import OrnamentFooter from '@/components/ui/OrnamentFooter'
+import OrnamentUpdate from '@/components/ui/OrnamentUpdate'
 import Head from 'next/head'
 import React from 'react'
 
@@ -14,8 +15,10 @@ export default function index() {
                         <title>News & Update - CINTA QURAN FOUNDATION</title>
                   </Head>
                   <Navbar />
-                  <Hero />
-                  <Introduction />
+                  <div className="w-full overflow-hidden relative lg:pb-[70px] lg:mb-[70px] pb-[20px] mb-[20px]">
+                        <OrnamentUpdate />
+                        <Hero />
+                  </div>                  <Introduction />
                   <div className="w-full h-max relative footer_main overflow-hidden">
                         <OrnamentFooter />
                         <Banner />
