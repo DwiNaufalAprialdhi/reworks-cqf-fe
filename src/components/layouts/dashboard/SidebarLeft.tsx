@@ -25,7 +25,7 @@ export default function SidebarLeft() {
                                     {/* Avatar */}
                                     <div className={`w-full h-full ${expand ? 'max-w-[48px] max-h-[48px]' : 'max-w-[48px] max-h-[48px]'} rounded-full overflow-hidden`}>
                                           <Image
-                                                src="/assets/images/pay.jpg"
+                                                src="/assets/images/profile-placeholder.png"
                                                 alt="avatar"
                                                 width={48}
                                                 height={48}
@@ -35,14 +35,14 @@ export default function SidebarLeft() {
                                     <div className={`${expand ? 'hidden' : 'flex'} w-max h-max flex flex-col gap-y-2`}>
                                           {/* Name */}
                                           <h2 className="font-semibold text-[20px] leading-[20px] tracking-[0.5%]">
-                                                Dwi Naufal
+                                                John Doe
                                           </h2>
                                           {/* Email */}
                                           <h3
                                                 className="font-normal text-sm leading-[14px] text-theme-secondary break-words"
                                                 style={{ wordBreak: 'break-word' }}
                                           >
-                                                dwinaufal@gmail.com
+                                                johndoe@gmail.com
                                           </h3>
                                     </div>
                               </div>
