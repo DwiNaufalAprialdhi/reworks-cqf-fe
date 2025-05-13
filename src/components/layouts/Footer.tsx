@@ -112,20 +112,26 @@ export default function Footer() {
                                                       <h2 className='font-medium text-base'>
                                                             Group
                                                       </h2>
-                                                      <Link href='#' className='block'>
+                                                      <Link href='https://www.cqfoundation.or.id/' className='block' target='_blank'>
                                                             <h2 className='menu_footer_link'>Cinta Quran Foundation</h2>
                                                       </Link>
-                                                      <Link href='#' className='block'>
+                                                      <Link href='https://app.cintaquran.com/' className='block' target='_blank'>
                                                             <h2 className='menu_footer_link'>Cinta Quran Learning</h2>
                                                       </Link>
-                                                      <Link href='#' className='block'>
+                                                      <Link href='https://cqs.orderonline.id/' className='block' target='_blank'>
                                                             <h2 className='menu_footer_link'>Cinta Quran Store</h2>
                                                       </Link>
-                                                      <Link href='#' className='block'>
+                                                      <Link href='https://www.cintaquran.center/' className='block' target='_blank'>
                                                             <h2 className='menu_footer_link'>Cinta Quran Center</h2>
                                                       </Link>
-                                                      <Link href='#' className='block'>
+                                                      <Link href='https://www.instagram.com/amazingjourney.id/' className='block' target='_blank'>
                                                             <h2 className='menu_footer_link'>Amazing Journey</h2>
+                                                      </Link>
+                                                      <Link href='#' className='block' target='_blank'>
+                                                            <h2 className='menu_footer_link'>Amazing Qurban</h2>
+                                                      </Link>
+                                                      <Link href='#' className='block' target='_blank'>
+                                                            <h2 className='menu_footer_link'>Amazing Box</h2>
                                                       </Link>
                                                 </div>
                                           </div>
