@@ -5,7 +5,7 @@ import ItemMitra from './ItemMitra'
 export default function ListMitra() {
       return (
             <>
-                  <main className='w-full h-auto overflow-hidden relative lg:pb-[80px] pb-5'>
+                  <main className='w-full h-auto overflow-hidden relative lg:pb-[80px] pb-5 lg:pt-[100px] pt-[50px] z-[5]'>
                         <section className='container_section_view'>
                               {/* Filter */}
                               <div className='w-full flex items-center lg:gap-x-6 gap-x-3 lg:mb-6 mb-5'>

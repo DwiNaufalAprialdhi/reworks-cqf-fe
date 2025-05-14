@@ -4,7 +4,7 @@ import React from 'react'
 export default function ProfileLegalitas() {
       return (
             <>
-                  <main className="w-full h-auto lg:mb-[160px] mb-[50px] overflow-hidden">
+                  <main className="w-full h-auto lg:mb-[160px] mb-[50px] overflow-hidden relative z-[5] lg:pt-[100px] pt-[50px]">
                         <section className='container_section_view grid grid-cols-12 lg:gap-6 gap-5'>
                               {/* Left */}
                               <div data-aos='fade-up' className='w-full h-max lg:col-span-7 col-span-12 flex flex-col'>

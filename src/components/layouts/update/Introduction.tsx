@@ -7,7 +7,7 @@ import CardNewsUpdate from '@/components/ui/NewsUpdate/CardNewsUpdate'
 export default function Introduction() {
       return (
             <>
-                  <main className="w-full h-auto overflow-hidden relative lg:mb-[100px] mb-[50px] font-smooth">
+                  <main className="w-full h-auto overflow-hidden relative z-[5] lg:mb-[100px] mb-[50px] font-smooth lg:pt-[100px] pt-[50px]">
                         <section className="container_section_view">
                               {/* List Update */}
                               <div data-aos="fade-up" className="w-full flex flex-col gap-y-6">

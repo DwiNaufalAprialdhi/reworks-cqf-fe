@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React, { useEffect } from 'react'
 import AOS from "aos";
 
-export default function OrnamentKemitraan() {
+export default function OrnamentVolunteer() {
       useEffect(() => {
             AOS.init({
                   duration: 1000, // Durasi animasi dalam milidetik
@@ -12,25 +12,25 @@ export default function OrnamentKemitraan() {
       return (
             <>
                   {/* Ornament */}
-                  <div data-aos="fade-down" className="absolute top-[440px] lg:top-[-180px] md:top-[160px] left-0 w-full md:h-max h-full z-[1]">
+                  <div data-aos="fade-down" className="absolute top-[550px] lg:top-[-230px] md:top-[335px] left-0 w-full md:h-max h-full z-[1]">
                         <Image src="/assets/ornament/oh-01.svg" alt="Ornament" width={1500} height={834} className="w-full h-max object-cover" />
                   </div>
-                  {/* <div data-aos="fade-down" className="absolute top-[440px] lg:top-[-180px] md:top-[160px] left-0 w-full md:h-max h-full z-[3]">
+                  {/* <div data-aos="fade-down" className="absolute top-[550px] lg:top-[-230px] md:top-[335px] left-0 w-full md:h-max h-full z-[3]">
                         <Image src="/assets/ornament/oh-02.svg" alt="Ornament" width={1500} height={834} className="w-full h-max object-cover" />
                   </div> */}
-                  <div data-aos="fade-down" className="absolute top-[440px] lg:top-[-180px] md:top-[160px] left-0 w-full md:h-max h-full z-[2]">
+                  <div data-aos="fade-down" className="absolute top-[550px] lg:top-[-230px] md:top-[335px] left-0 w-full md:h-max h-full z-[2]">
                         <Image src="/assets/ornament/oh-03.svg" alt="Ornament" width={1500} height={834} className="w-full h-max object-cover" />
                   </div>
-                  {/* <div data-aos="fade-down" className="absolute top-[440px] lg:top-[-180px] md:top-[160px] left-0 w-full md:h-max h-full z-[4]">
+                  {/* <div data-aos="fade-down" className="absolute top-[550px] lg:top-[-230px] md:top-[335px] left-0 w-full md:h-max h-full z-[4]">
                         <Image src="/assets/ornament/oh-04.svg" alt="Ornament" width={1500} height={834} className="w-full h-max object-cover" />
                   </div> */}
-                  <div data-aos="fade-down" className="absolute lg:top-0 md:top-[500px] top-[600px] left-0 w-full md:h-max h-full z-[-1]">
+                  <div data-aos="fade-down" className="absolute lg:top-0 md:top-[500px] top-[700px] left-0 w-full md:h-max h-full z-[-1]">
                         <Image src="/assets/ornament/oe-01.svg" alt="Ornament" width={1500} height={834} className="w-full h-auto object-cover" />
                   </div>
-                  <div data-aos="fade-down" className="absolute lg:top-0 md:top-[500px] top-[600px] left-0 w-full md:h-max h-full z-[-2]">
+                  <div data-aos="fade-down" className="absolute lg:top-0 md:top-[500px] top-[700px] left-0 w-full md:h-max h-full z-[-2]">
                         <Image src="/assets/ornament/oe-02.svg" alt="Ornament" width={1500} height={834} className="w-full h-auto object-cover" />
                   </div>
-                  <div data-aos="fade-down" className="absolute lg:top-[50px] md:top-[550px] top-[650px] left-0 w-full md:h-max h-full z-[-3]">
+                  <div data-aos="fade-down" className="absolute lg:top-[50px] md:top-[550px] top-[750px] left-0 w-full md:h-max h-full z-[-3]">
                         <Image src="/assets/ornament/oe-03.svg" alt="Ornament" width={1500} height={834} className="w-full h-auto object-cover opacity-40" />
                   </div>
             </>
