@@ -24,6 +24,15 @@ export default function OrnamentReport() {
                   {/* <div data-aos="fade-down" className="absolute top-[155px] lg:top-[-370px] md:top-[-95px] left-0 w-full md:h-max h-full z-[4]">
                         <Image src="/assets/ornament/oh-04.svg" alt="Ornament" width={1500} height={834} className="w-full h-max object-cover" />
                   </div> */}
+                  <div data-aos="fade-down" className="absolute lg:top-[-150px] md:top-[100px] top-[300px] left-0 w-full md:h-max h-full z-[-1]">
+                        <Image src="/assets/ornament/oe-01.svg" alt="Ornament" width={1500} height={834} className="w-full h-auto object-cover" />
+                  </div>
+                  <div data-aos="fade-down" className="absolute lg:top-[-150px] md:top-[100px] top-[300px] left-0 w-full md:h-max h-full z-[-2]">
+                        <Image src="/assets/ornament/oe-02.svg" alt="Ornament" width={1500} height={834} className="w-full h-auto object-cover" />
+                  </div>
+                  <div data-aos="fade-down" className="absolute lg:top-[-100px] md:top-[150px] top-[350px] left-0 w-full md:h-max h-full z-[-3]">
+                        <Image src="/assets/ornament/oe-03.svg" alt="Ornament" width={1500} height={834} className="w-full h-auto object-cover opacity-40" />
+                  </div>
             </>
       )
 }

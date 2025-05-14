@@ -9,7 +9,7 @@ import Image from 'next/image'
 export default function OnlineReport() {
       return (
             <>
-                  <div className='w-full h-max relative'>
+                  <div className='w-full h-max relative z-[5] lg:pt-[100px] pt-[50px]'>
                         {/* Ornament */}
                         <div className='hidden lg:block absolute w-full h-auto bottom-32 right-0 z-[4] bounceOpt01'>
                               <Image src='/assets/ornament/ornament-opt-1.svg' width={1920} height={1920} alt='Ornament' className='w-full h-full object-cover' />
