@@ -14,13 +14,13 @@ export default function Terms() {
                   <main className="hero_main w-full h-auto lg:pt-[140px] pt-[85px] lg:pb-[150px] pb-5 overflow-hidden relative">
                         {/* Ornament */}
                         <div data-aos="fade-down" className='absolute lg:-top-[450px] md:-top-[120px] -top-[50px] left-0 w-full h-auto z-[1]'>
-                              <Image src='/assets/ornament/ohd-01.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
+                              <Image src='/assets/ornament/ohd-01.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover lg:scale-110' />
                         </div>
                         <div data-aos="fade-down" className='absolute lg:-top-[450px] md:-top-[120px] -top-[50px] left-0 w-full h-auto z-[2]'>
-                              <Image src='/assets/ornament/ohd-02.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
+                              <Image src='/assets/ornament/ohd-02.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover lg:scale-110' />
                         </div>
                         <div data-aos="fade-down" className='absolute lg:-top-[450px] md:-top-[120px] -top-[50px] left-0 w-full h-auto z-[3]'>
-                              <Image src='/assets/ornament/ohd-03.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
+                              <Image src='/assets/ornament/ohd-03.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover lg:scale-110' />
                         </div>
                         {/* <div data-aos="fade-down" className='absolute lg:-top-[450px] md:-top-[120px] -top-[50px] left-0 w-full h-auto z-[4]'>
                                                    <Image src='/assets/ornament/ohd-04.svg' alt='Ornament' width={1500} height={834} className='w-full h-auto object-cover' />
