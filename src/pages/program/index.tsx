@@ -15,11 +15,11 @@ export default function index() {
                         <title>Program - CINTA QURAN FOUNDATION</title>
                   </Head>
                   <Navbar />
-                  <div className="w-full overflow-hidden relative lg:pb-[70px] lg:mb-[70px] pb-[20px] mb-[20px]">
+                  <div className="w-full overflow-hidden relative">
                         <OrnamentProgram />
                         <Hero />
+                        <Introduction />
                   </div>
-                  <Introduction />
                   <div className="w-full h-max relative footer_main overflow-hidden">
                         <OrnamentFooter />
                         <Banner />

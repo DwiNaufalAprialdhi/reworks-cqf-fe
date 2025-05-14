@@ -106,7 +106,7 @@ export default function Footer() {
                                                       </Link>
                                                 </div>
                                           </div>
-                                          {/* Column 4 */}
+                                          {/* Column 5 */}
                                           <div className='w-full col-span-1 grid grid-cols-1 gap-x-1'>
                                                 <div className='w-full col-span-1 flex flex-col gap-y-2'>
                                                       <h2 className='font-medium text-base'>
@@ -135,7 +135,7 @@ export default function Footer() {
                                                       </Link>
                                                 </div>
                                           </div>
-                                          {/* Column 5 */}
+                                          {/* Column 6 */}
                                           <div className='w-full col-span-1 grid grid-cols-1 gap-x-1'>
                                                 <div className='w-full col-span-1 flex flex-col gap-y-2'>
                                                       <h2 className='font-medium text-base'>

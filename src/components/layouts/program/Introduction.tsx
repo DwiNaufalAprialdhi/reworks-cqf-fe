@@ -7,7 +7,7 @@ import ButtonOnScroll from '@/components/materials/ButtonOnScroll'
 export default function Introduction() {
       return (
             <>
-                  <main className="w-full h-auto overflow-hidden relative lg:mb-[100px] mb-[50px]">
+                  <main className="w-full h-auto overflow-hidden relative lg:mb-[100px] mb-[50px] lg:pt-[100px] pt-[50px] z-[5]">
                         <section className="container_section_view">
                               {/* Introduction */}
                               <div className="w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-[80px] gap-5 items-center mb-6">
@@ -29,7 +29,7 @@ export default function Introduction() {
                                           </div>
                                     </div>
                                     {/* Right */}
-                                    <div data-aos='fade-left' className='w-full col-span-1 overflow-hidden rounded-[16px] bg-white flex items-center justify-center lg:p-5 p-3 order-1 lg:order-2'>
+                                    <div data-aos='fade-left' className='w-full col-span-1 overflow-hidden rounded-[16px] bg-transparent flex items-center justify-center lg:p-5 p-3 order-1 lg:order-2'>
                                           <Image
                                                 src='/assets/logo/cqf.svg'
                                                 width={391}
