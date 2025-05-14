@@ -220,7 +220,7 @@ export default function Navbar() {
                         {/* Kondisi Ketika Sudah Login */}
                         <div className='w-full py-5 border-b border-[#D0D0D0] border-opacity-50 flex flex-col gap-y-4'>
                               <div className='px-5 flex flex-col gap-y-4'>
-                                    <Link href={'#'} className='navbar_link_menu'>Kajian</Link>
+                                    <Link href={'/kajian'} className='navbar_link_menu'>Kajian</Link>
                                     <Link href={'#'} className='navbar_link_menu'>Amazing Box</Link>
                                     <Link href={'#'} className='navbar_link_menu'>Barang Berkah</Link>
                                     <Link href={'#'} className='navbar_link_menu'>CintaQuran Call</Link>
@@ -232,20 +232,20 @@ export default function Navbar() {
                         </div>
                         <div className='w-full py-5 border-b border-[#D0D0D0] border-opacity-50'>
                               <div className='px-5 flex flex-col gap-y-4'>
-                                    <Link href={'#'} className='navbar_link_menu'>Program</Link>
-                                    <Link href={'#'} className='navbar_link_menu'>Kajian</Link>
-                                    <Link href={'#'} className='navbar_link_menu'>Donasi</Link>
-                                    <Link href={'#'} className='navbar_link_menu'>Kemitraan</Link>
-                                    <Link href={'#'} className='navbar_link_menu'>News & Update</Link>
+                                    <Link href={'/program'} className='navbar_link_menu'>Program</Link>
+                                    <Link href={'/kajian'} className='navbar_link_menu'>Kajian</Link>
+                                    <Link href={'/live-donation'} className='navbar_link_menu'>Donasi</Link>
+                                    <Link href={'/kemitraan'} className='navbar_link_menu'>Kemitraan</Link>
+                                    <Link href={'/update'} className='navbar_link_menu'>News & Update</Link>
                               </div>
                         </div>
                         <div className='w-full py-5 border-b border-[#D0D0D0] border-opacity-50 flex flex-col gap-y-4'>
                               <div className='px-5 flex flex-col gap-y-4'>
-                                    <Link href={'#'} className='navbar_link_menu'>Volunteer</Link>
-                                    <Link href={'#'} className='navbar_link_menu'>Tentang Kami</Link>
-                                    <Link href={'#'} className='navbar_link_menu'>FAQ</Link>
-                                    <Link href={'#'} className='navbar_link_menu'>Syarat & Ketentuan</Link>
-                                    <Link href={'#'} className='navbar_link_menu'>Kebijakan Privasi</Link>
+                                    <Link href={'/volunteer'} className='navbar_link_menu'>Volunteer</Link>
+                                    <Link href={'/about'} className='navbar_link_menu'>Tentang Kami</Link>
+                                    <Link href={'/faq'} className='navbar_link_menu'>FAQ</Link>
+                                    <Link href={'/terms'} className='navbar_link_menu'>Syarat & Ketentuan</Link>
+                                    <Link href={'/privacy'} className='navbar_link_menu'>Kebijakan Privasi</Link>
                               </div>
                         </div>
                         <div className='w-full py-5 flex flex-col gap-y-4'>
