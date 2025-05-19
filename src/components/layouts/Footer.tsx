@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -19,11 +20,11 @@ export default function Footer() {
                                           <p className='font-normal text-sm mb-[25px]'>
                                                 Cinta Quran Foundation adalah lembaga independen yang mendakwahkan Alquran sebagai solusi dan inspirasi untuk negeri.
                                           </p>
-                                          <Link href='/report' className='block w-max mb-[50px]'>
+                                          <a href='/report' className='block w-max mb-[50px]'>
                                                 <ButtonIconFooter>
                                                       Laporan Lembaga
                                                 </ButtonIconFooter>
-                                          </Link>
+                                          </a>
                                           <p className='font-normal text-sm mb-[25px]'>
                                                 Jl. Parikesit Raya No.35-37 Bantarjati, Bogor Utara, Kota Bogor 16153, Jawa Barat, Indonesia.
                                           </p>
