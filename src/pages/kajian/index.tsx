@@ -139,7 +139,7 @@ export default function Index() {
                                     </h2>
                               </div>
                               {/* Slider Card */}
-                              <div className='w-full grid grid-cols-1 pl-5'>
+                              <div className='w-full grid grid-cols-1 px-5'>
                                     <div className='w-full col-span-1'>
                                           <Swiper
                                                 slidesPerView={2.2}
@@ -167,7 +167,7 @@ export default function Index() {
                                                       }
 
                                                 }}
-                                                className="mySwiper"
+                                                className="mobile-view-swiper"
                                           >
                                                 {Array.from({ length: 5 }).map((_, index) => (
                                                       <SwiperSlide key={index}>
@@ -195,7 +195,7 @@ export default function Index() {
                                     <Select />
                               </div>
                               {/* Slider Card */}
-                              <div className='w-full grid grid-cols-1 pl-5'>
+                              <div className='w-full grid grid-cols-1 px-5'>
                                     <div className='w-full col-span-1'>
                                           <Swiper
                                                 slidesPerView={2.2}
@@ -223,7 +223,7 @@ export default function Index() {
                                                       }
 
                                                 }}
-                                                className="mySwiper"
+                                                className="mobile-view-swiper"
                                           >
                                                 {Array.from({ length: 5 }).map((_, index) => (
                                                       <SwiperSlide key={index}>
