@@ -121,7 +121,7 @@ export default function index() {
                         <main className='w-full h-full bg-white p-6'>
                               {/* Amazing Qurban Title */}
                               <div className='w-full flex flex-col items-start justify-start gap-1 lg:gap-0 mb-4'>
-                                    <h2 className='font-semibold lg:text-[48px] text-[24px] leading-normal text-[#6B9353]'>
+                                    <h2 className='font-semibold lg:text-[48px] text-[24px] leading-normal'>
                                           Amazing Qurban Anda
                                     </h2>
                               </div>
