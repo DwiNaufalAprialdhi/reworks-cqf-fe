@@ -94,6 +94,27 @@ export default function SidebarLeft() {
                                                       CintaQuran Call
                                                 </span>
                                           </Link>
+                                          {/* Barang Berkah */}
+                                          <Link href="/dashboard/babe" className={`w-full py-[10px] px-4 rounded-[8px] ${expand ? 'flex items-center justify-center' : 'flex items-center gap-x-2'} ${router.pathname === '/dashboard/babe' ? 'bg-theme-ascent/10 text-theme-ascent' : 'text-theme-secondary'} hover:bg-theme-ascent/10 hover:text-theme-ascent transition_menu`}>
+                                                <Icon name="babe" className='w-6 h-6' />
+                                                <span className={`font-normal text-sm ${expand ? 'hidden' : 'block'}`}>
+                                                      Barang Berkah
+                                                </span>
+                                          </Link>
+                                          {/* Amazing Qurban */}
+                                          <Link href="/dashboard/amqur" className={`w-full py-[10px] px-4 rounded-[8px] ${expand ? 'flex items-center justify-center' : 'flex items-center gap-x-2'} ${router.pathname === '/dashboard/amqur' ? 'bg-theme-ascent/10 text-theme-ascent' : 'text-theme-secondary'} hover:bg-theme-ascent/10 hover:text-theme-ascent transition_menu`}>
+                                                <Icon name="amqur" className='w-6 h-6' />
+                                                <span className={`font-normal text-sm ${expand ? 'hidden' : 'block'}`}>
+                                                      Amazing Qurban
+                                                </span>
+                                          </Link>
+                                          {/* Amazing Box */}
+                                          <Link href="/dashboard/ambox" className={`w-full py-[10px] px-4 rounded-[8px] ${expand ? 'flex items-center justify-center' : 'flex items-center gap-x-2'} ${router.pathname === '/dashboard/ambox' ? 'bg-theme-ascent/10 text-theme-ascent' : 'text-theme-secondary'} hover:bg-theme-ascent/10 hover:text-theme-ascent transition_menu`}>
+                                                <Icon name="ambox" className='w-6 h-6' />
+                                                <span className={`font-normal text-sm ${expand ? 'hidden' : 'block'}`}>
+                                                      Amazing Box
+                                                </span>
+                                          </Link>
                                           {/* Fundraiser */}
                                           <Link href="/dashboard/fundraiser" className={`w-full py-[10px] px-4 rounded-[8px] ${expand ? 'flex items-center justify-center' : 'flex items-center gap-x-2'} ${router.pathname === '/dashboard/fundraiser' ? 'bg-theme-ascent/10 text-theme-ascent' : 'text-theme-secondary'} hover:bg-theme-ascent/10 hover:text-theme-ascent transition_menu`}>
                                                 <Icon name="horn" className='w-6 h-6' />
