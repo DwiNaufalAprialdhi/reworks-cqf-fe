@@ -14,7 +14,7 @@ export default function LayoutDashboard(props: Props) {
                               {/* Sidebar Left */}
                               <SidebarLeft />
                               {/* Main Content */}
-                              <main className='w-max h-auto overflow-x-hidden'>
+                              <main className='w-full h-auto overflow-x-hidden'>
                                     {props.children}
                               </main>
                               {/* Sidebar Right */}
