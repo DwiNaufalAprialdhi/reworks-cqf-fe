@@ -234,14 +234,14 @@ export default function QurbanDetail() {
                                           <div className="bg-white rounded-2xl shadow-sm border border-green-100 overflow-hidden">
                                                 <div className="p-6 bg-gradient-to-r from-green-50 to-white border-b border-green-100">
                                                       <h3 className="font-semibold text-xl text-green-800 flex items-center">
-                                                            {/* <Icon name="image" className="w-5 h-5 mr-2 text-green-600" /> */}
+                                                            <Icon name="image" className="w-5 h-5 mr-2 text-green-600" />
                                                             Dokumentasi
                                                       </h3>
                                                 </div>
                                                 <div className="p-6 space-y-6">
                                                       <div>
                                                             <p className="text-sm font-medium text-gray-700 mb-3 flex items-center">
-                                                                  {/* <Icon name="camera" className="w-4 h-4 mr-2 text-gray-500" /> */}
+                                                                  <Icon name="camera" className="w-4 h-4 mr-2 text-gray-500" />
                                                                   Foto Hewan Qurban
                                                             </p>
                                                             <div className="rounded-xl overflow-hidden border-2 border-green-100 shadow-inner">
@@ -255,7 +255,7 @@ export default function QurbanDetail() {
 
                                                       <div>
                                                             <p className="text-sm font-medium text-gray-700 mb-3 flex items-center">
-                                                                  {/* <Icon name="grid" className="w-4 h-4 mr-2 text-gray-500" /> */}
+                                                                  <Icon name="grid" className="w-4 h-4 mr-2 text-gray-500" />
                                                                   Galeri Tambahan
                                                             </p>
                                                             <div className="grid grid-cols-3 gap-3">
@@ -279,7 +279,7 @@ export default function QurbanDetail() {
 
                                                       <div>
                                                             <p className="text-sm font-medium text-gray-700 mb-3 flex items-center">
-                                                                  {/* <Icon name="file" className="w-4 h-4 mr-2 text-gray-500" /> */}
+                                                                  <Icon name="file" className="w-4 h-4 mr-2 text-gray-500" />
                                                                   Sertifikat Qurban
                                                             </p>
                                                             <a
