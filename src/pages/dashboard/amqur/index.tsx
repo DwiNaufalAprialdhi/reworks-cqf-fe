@@ -3,6 +3,7 @@ import Icon from '@/components/Icons/Icon';
 import LayoutDashboard from '@/components/layouts/dashboard/LayoutDashboard'
 import Navbar from '@/components/layouts/dashboard/Navbar'
 import Head from 'next/head'
+import Link from 'next/link';
 import React, { useState } from 'react'
 
 
@@ -252,8 +253,9 @@ export default function index() {
                                                             >
                                                                   <td className="p-4 whitespace-nowrap font-medium text-green-700">{item.id}</td>
                                                                   <td className="p-4">
-                                                                        <div className="font-semibold text-green-900">{item.nama}</div>
-                                                                        <p className="text-xs text-gray-500 break-words">{item.deskripsi}</p>
+                                                                        <Link href={`/dashboard/amqur/${item.id}`} className="font-semibold text-green-900 hover:text-green-700 hover:underline">
+                                                                              {item.nama}
+                                                                        </Link>                                                                        <p className="text-xs text-gray-500 break-words">{item.deskripsi}</p>
                                                                   </td>
                                                                   <td className="p-4 whitespace-nowrap">
                                                                         <span className="font-medium">{item.jenis}</span>
@@ -382,8 +384,9 @@ export default function index() {
                                                             <tr key={item.id} className={idx % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                                                                   <td className="p-4 whitespace-nowrap font-medium text-gray-700">{item.id}</td>
                                                                   <td className="p-4">
-                                                                        <div className="font-semibold text-gray-900">{item.nama}</div>
-                                                                        <p className="text-xs text-gray-500 break-words">{item.deskripsi}</p>
+                                                                        <Link href={`/dashboard/amqur/${item.id}`} className="font-semibold text-green-900 hover:text-green-700 hover:underline">
+                                                                              {item.nama}
+                                                                        </Link>                                                                        <p className="text-xs text-gray-500 break-words">{item.deskripsi}</p>
                                                                   </td>
                                                                   <td className="p-4 whitespace-nowrap">
                                                                         <span className="font-medium">{item.jenis}</span>
