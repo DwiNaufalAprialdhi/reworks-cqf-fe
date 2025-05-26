@@ -46,22 +46,8 @@ export default function SidebarLeft() {
                                           </h3>
                                     </div>
                               </div>
-                              {/* Select */}
-                              <div className={`w-full h-max relative mb-[48px] ${expand ? 'hidden' : 'block'}`}>
-                                    {/* Icon */}
-                                    <Icon name="chevronDown" className='absolute w-4 h-4 top-3 right-4 text-theme-dark z-[1] pointer-events-none' />
-                                    <select
-                                          name="select"
-                                          id="select"
-                                          className='py-3 pl-4 pr-[42px] border border-[#9B9B9B] rounded-[4px] appearance-none w-full bg-transparent font-medium text-xs outline-none'
-                                    >
-                                          <option value="CintaQuranFoundation">Cinta Quran Foundation</option>
-                                          <option value="CintaQuranLearning">Cinta Quran Learning</option>
-                                          <option value="CintaQuranCall">Cinta Quran Call</option>
-                                    </select>
-                              </div>
                               {/* Main Menu */}
-                              <div className={`w-full flex flex-col gap-y-[20px]`}>
+                              <div className={`w-full flex flex-col gap-y-[20px] mt-4`}>
                                     <h2 className={`font-medium ${expand ? 'hidden' : 'block'} text-sm text-theme-secondary`}>
                                           Main Menu
                                     </h2>

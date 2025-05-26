@@ -1,5 +1,6 @@
+import Icon from '@/components/Icons/Icon';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 
 const activities = [
       { message: 'User mendaftar akun dengan email', time: 'Baru saja' },
@@ -18,13 +19,22 @@ const fundraisers = [
 ];
 
 export default function SidebarRight() {
+      const [expand, setExpand] = useState(false)
+
+      const handleExpand = () => {
+            setExpand(!expand)
+      }
       return (
-            <aside className='w-full hidden lg:block max-w-[258px] h-auto border-l border-theme-gray_lg'>
+            <aside className={`w-full hidden lg:block ${expand ? 'max-w-[258px]' : 'max-w-[100px]'} h-auto border-l border-theme-gray_lg relative transition-all duration-300`}>
+                  {/* Toggle Expand */}
+                  <div onClick={handleExpand} className="w-6 h-6 rounded-full shadow-md z-[2] absolute -left-3 bg-white top-[135px] flex items-center justify-center cursor-pointer">
+                        <Icon name="chevronDown" className={`w-4 h-4 text-theme-dark ${expand ? '-rotate-90' : 'rotate-90'} transition_menu`} />
+                  </div>
                   {/* Activities */}
                   <div className='w-full p-4 flex flex-col gap-y-3 mb-4'>
-                        <h2 className="font-normal text-sm">Activities</h2>
+                        <h2 className={`font-normal ${expand ? 'text-start text-sm' : 'text-center text-xs'}`}>Activities</h2>
                         {activities.map((activity, index) => (
-                              <div key={index} className="w-full flex items-center gap-x-2">
+                              <div key={index} className={`w-full flex items-center ${expand ? 'justify-start' : 'justify-center'} gap-x-2`}>
                                     <div className='w-max h-max flex flex-col items-center justify-center gap-1'>
                                           <div className='w-5 h-5 bg-white border-[5px] border-theme-ascent rounded-full'></div>
                                           {index !== activities.length - 1 && (
@@ -32,8 +42,8 @@ export default function SidebarRight() {
                                           )}
                                     </div>
                                     <div className='flex flex-col'>
-                                          <h2 className='font-normal text-sm line-clamp-1'>{activity.message}</h2>
-                                          <h2 className='font-normal text-xs line-clamp-1 text-theme-secondary'>{activity.time}</h2>
+                                          <h2 className={`font-normal text-sm line-clamp-1 ${expand ? 'inline-block' : 'hidden'}`}>{activity.message}</h2>
+                                          <h2 className={`font-normal text-xs line-clamp-1 text-theme-secondary ${expand ? 'block' : 'hidden'}`}>{activity.time}</h2>
                                     </div>
                               </div>
                         ))}
@@ -41,9 +51,9 @@ export default function SidebarRight() {
 
                   {/* Fundraiser */}
                   <div className='w-full p-4 flex flex-col gap-y-3'>
-                        <h2 className="font-normal text-sm">Fundraiser</h2>
+                        <h2 className={`font-normal ${expand ? 'text-start text-sm' : 'text-center text-xs'}`}>Fundraiser</h2>
                         {fundraisers.map((donor, index) => (
-                              <div key={index} className="w-full flex gap-x-2">
+                              <div key={index} className={`w-full flex items-start ${expand ? 'justify-start' : 'justify-center'} gap-x-2`}>
                                     <div className='w-max h-max flex flex-col items-center justify-center gap-1'>
                                           <div className='w-6 h-6 overflow-hidden rounded-full'>
                                                 <Image
@@ -59,8 +69,8 @@ export default function SidebarRight() {
                                           )}
                                     </div>
                                     <div className='flex flex-col'>
-                                          <h2 className='font-normal text-sm line-clamp-2'>{donor.name}</h2>
-                                          <h2 className='font-normal text-xs line-clamp-1 text-theme-secondary'>{donor.amount}</h2>
+                                          <h2 className={`font-normal text-sm line-clamp-1 ${expand ? 'inline-block' : 'hidden'}`}>{donor.name}</h2>
+                                          <h2 className={`font-normal text-xs line-clamp-1 text-theme-secondary ${expand ? 'inline-block' : 'hidden'}`}>{donor.amount}</h2>
                                     </div>
                               </div>
                         ))}
