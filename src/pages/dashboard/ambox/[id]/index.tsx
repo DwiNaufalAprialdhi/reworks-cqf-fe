@@ -25,9 +25,9 @@ export default function BoxDetail() {
             tanggalPengembalian: "2025-05-18",
             statusPengembalian: "Lengkap",
             dokumentasi: [
-                  "https://example.com/foto1.jpg",
-                  "https://example.com/foto2.jpg",
-                  "https://example.com/foto3.jpg"
+                  "/assets/images/ambox.png",
+                  "/assets/images/ambox.png",
+                  "/assets/images/ambox.png"
             ],
             laporan: "https://example.com/laporan3.pdf",
             penanggungJawab: "Andi Wijaya",
