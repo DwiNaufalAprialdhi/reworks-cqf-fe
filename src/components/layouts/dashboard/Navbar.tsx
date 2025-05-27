@@ -40,7 +40,7 @@ export default function Navbar() {
             <>
                   {/* Desktop */}
                   <nav className="w-full sticky top-0 bg-white lg:p-3 p-2 z-10 bg-white-500 border-b border-theme-gray_lg flex items-center justify-between">
-                        <Link href="/" className="w-max h-max lg:ml-5 ml-0">
+                        <Link href="/" className="w-max h-max mx-auto md:mx-auto lg:mx-0 lg:pl-4 pl-0">
                               <Image src="/assets/logo/cqf.svg"
                                     alt="logo"
                                     width={150}
