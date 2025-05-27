@@ -144,7 +144,7 @@ export default function index() {
                                                       <h3 className="text-2xl font-bold text-green-700">{data.length}</h3>
                                                 </div>
                                                 <div className="p-3 rounded-lg bg-green-50">
-                                                      <Icon name="ambox" className="lg:w-6 w-5 h-max text-green-600" />
+                                                      <Icon name="babe" className="lg:w-6 w-5 h-max text-green-600" />
                                                 </div>
                                           </div>
                                     </div>
@@ -157,7 +157,7 @@ export default function index() {
                                                       </h3>
                                                 </div>
                                                 <div className="p-3 rounded-lg bg-green-50">
-                                                      <Icon name="babe" className="lg:w-6 w-5 h-max text-green-600" />
+                                                      <Icon name="more" className="lg:w-6 w-5 h-max text-green-600" />
                                                 </div>
                                           </div>
                                     </div>
