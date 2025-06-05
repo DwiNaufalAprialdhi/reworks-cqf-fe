@@ -3,6 +3,7 @@ import ItemDashboard from '@/components/layouts/dashboard/elements/ItemDashboard
 import StackedColumnChart from '@/components/layouts/dashboard/elements/StackedColumnChart'
 import LayoutDashboard from '@/components/layouts/dashboard/LayoutDashboard'
 import Navbar from '@/components/layouts/dashboard/Navbar'
+import Datepickers from '@/components/materials/Datepicker'
 import Head from 'next/head'
 import React from 'react'
 
@@ -33,31 +34,14 @@ export default function index() {
                   <LayoutDashboard>
                         <main className='w-full h-full bg-white'>
                               <section className="w-full p-6 flex flex-col">
-                                    {/* Select */}
-                                    <div className={`block lg:hidden w-full h-max relative mb-[48px]`}>
-                                          {/* Icon */}
-                                          <Icon name="chevronDown" className='absolute w-4 h-4 top-3 right-4 text-theme-dark z-[1] pointer-events-none' />
-                                          <select
-                                                name="select"
-                                                id="select"
-                                                className='py-3 pl-4 pr-[42px] border border-[#9B9B9B] rounded-[4px] appearance-none w-full bg-transparent font-medium text-xs outline-none'
-                                          >
-                                                <option value="CintaQuranFoundation">Cinta Quran Foundation</option>
-                                                <option value="CintaQuranLearning">Cinta Quran Learning</option>
-                                                <option value="CintaQuranCall">Cinta Quran Call</option>
-                                          </select>
-                                    </div>
                                     {/* Overview Title */}
                                     <div className='w-full flex lg:flex-row lg:items-center lg:justify-between flex-col items-start justify-start gap-1 lg:gap-0 mb-4'>
                                           <h2 className='font-semibold lg:text-[48px] text-[24px] leading-normal'>
                                                 Overview
                                           </h2>
-                                          <input
-                                                type="date"
-                                                id='date'
-                                                name='date'
-                                                className='w-full lg:max-w-[262px] max-w-none h-max py-3 px-4 border border-theme-gray_lg rounded-[4px] bg-transparent font-medium lg:text-xs text-[10px]'
-                                          />
+                                          <div className='w-full lg:max-w-[300px] max-w-none'>
+                                                <Datepickers />
+                                          </div>
                                     </div>
                                     {/* Dashboard */}
                                     <div className='w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 lg:mb-[32px] mb-4'>
