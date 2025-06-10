@@ -123,7 +123,7 @@ export default function index() {
                         <main className='w-full h-full bg-gray-50 p-6'>
                               {/* Header Section */}
                               <div className='w-full flex flex-col items-start justify-start gap-1 lg:gap-0 mb-6'>
-                                    <h2 className='font-semibold lg:text-[48px] text-[24px] leading-normal text-green-800'>
+                                    <h2 className='font-semibold lg:text-[50px] text-[24px] leading-tight text-green-800 font-baloo'>
                                           Amazing Qurban Anda
                                     </h2>
                                     <p className='text-sm text-gray-400'>

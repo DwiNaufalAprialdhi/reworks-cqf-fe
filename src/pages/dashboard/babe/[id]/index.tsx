@@ -114,7 +114,7 @@ export default function BarangBerkahDetail() {
                               <div className='w-full flex flex-col items-start justify-start gap-1 md:gap-0 mb-4 md:mb-6'>
                                     <div className='flex flex-col md:flex-row md:items-center md:justify-between w-full gap-2 md:gap-0'>
                                           <div>
-                                                <h2 className='font-semibold text-xl md:text-2xl lg:text-[32px] leading-normal text-green-800 mb-1'>
+                                                <h2 className='font-semibold lg:text-[50px] text-[24px] leading-tight text-green-800 font-baloo'>
                                                       {barangData.nama}
                                                 </h2>
                                                 <p className='text-xs md:text-sm text-gray-500'>

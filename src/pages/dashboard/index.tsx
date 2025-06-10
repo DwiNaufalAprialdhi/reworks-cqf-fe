@@ -36,7 +36,7 @@ export default function index() {
                               <section className="w-full p-6 flex flex-col">
                                     {/* Overview Title */}
                                     <div className='w-full flex lg:flex-row lg:items-center lg:justify-between flex-col items-start justify-start gap-1 lg:gap-0 mb-4'>
-                                          <h2 className='font-semibold lg:text-[48px] text-[24px] leading-normal'>
+                                          <h2 className='title_dashboard'>
                                                 Overview
                                           </h2>
                                           <div className='w-full lg:max-w-[300px] max-w-none'>

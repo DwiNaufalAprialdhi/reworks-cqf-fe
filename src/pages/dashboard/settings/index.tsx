@@ -63,7 +63,7 @@ export default function Index() {
                                           </select>
                                     </div>
                                     {/* Pengaturan Title */}
-                                    <h2 className='font-semibold lg:text-[48px] text-[24px] leading-normal mb-4'>
+                                    <h2 className='title_dashboard'>
                                           Pengaturan
                                     </h2>
                                     {/* Activity Head Box */}

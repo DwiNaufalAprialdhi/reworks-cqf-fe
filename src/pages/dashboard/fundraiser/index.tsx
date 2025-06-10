@@ -30,7 +30,7 @@ export default function index() {
                                           </select>
                                     </div>
                                     {/* Fundraiser Title */}
-                                    <h2 className='font-semibold lg:text-[48px] text-[24px] leading-normal mb-4'>
+                                    <h2 className='title_dashboard'>
                                           Fundraiser
                                     </h2>
                                     {/* Fiture */}

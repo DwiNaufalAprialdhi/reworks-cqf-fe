@@ -104,6 +104,9 @@
   .search_navbar_scrolled {
     @apply w-full rounded-full lg:py-2 py-1 lg:px-3 px-2 bg-theme-ascent/10 backdrop-blur-sm outline-none font-normal lg:text-sm text-xs text-slate-800 placeholder:text-slate-800;
   }
+  .title_dashboard {
+    @apply font-semibold lg:text-[50px] text-[24px] leading-normal font-baloo;
+  }
 }
 
 @layer utilities {

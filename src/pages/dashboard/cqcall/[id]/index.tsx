@@ -79,7 +79,7 @@ export default function CallSessionDetail() {
                               {/* Header */}
                               <div className='flex flex-col md:flex-row md:items-center md:justify-between mb-6'>
                                     <div>
-                                          <h2 className='font-semibold text-2xl lg:text-[32px] text-green-800 mb-1'>
+                                          <h2 className='font-semibold lg:text-[50px] text-[24px] leading-tight text-green-800 font-baloo'>
                                                 Sesi {sessionData.id}
                                           </h2>
                                           <p className='text-sm text-gray-500'>
