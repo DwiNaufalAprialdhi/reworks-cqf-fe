@@ -162,8 +162,8 @@ export default function Hero() {
                                                             required: true,
                                                       }}
                                                       containerClass="w-full"
-                                                      inputClass="!w-full !rounded-full !bg-transparent !pr-[14px] !pl-[52px] !py-3 !font-normal !lg:text-xs !text-[10px] !leading-normal !outline-none !border !border-theme-gray_lg"
-                                                      buttonClass="!bg-transparent !border-none !outline-none !left-[14px]"
+                                                      inputClass="!w-full !rounded-full !bg-transparent !pr-[14px] !pl-[45px] !py-5 !font-normal !lg:text-xs !text-[10px] !leading-normal !outline-none !border !border-theme-gray_lg"
+                                                      buttonClass="!w-max !h-max !bg-transparent !border-none !outline-none !left-[10px] !top-1/2 !-translate-y-1/2"
                                                       dropdownClass="!text-xs"
                                                 />
                                           </div>

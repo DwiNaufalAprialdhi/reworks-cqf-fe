@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import LayoutAuth from '@/components/layouts/auth/LayoutAuth';
 import ButtonAscent from '@/components/materials/ButtonAscent';
 import Input from '@/components/materials/Input';
@@ -8,12 +8,10 @@ import Label from '@/components/materials/Label';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { PhoneInput } from 'react-international-phone';
-import 'react-international-phone/style.css';
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 
 export default function Index() {
-      const [phone, setPhone] = useState('');
-
       return (
             <>
                   <Head>
@@ -41,7 +39,7 @@ export default function Index() {
                                     </div>
                                     {/* Form */}
                                     <form action="#" className="w-full flex flex-col mb-[64px]">
-                                          <div className="flex flex-col gap-y-2 mb-3">
+                                          <div className="w-full flex flex-col gap-y-2 mb-3">
                                                 <Label htmlFor={'fulllname'} title={'Nama Lengkap'} />
                                                 <Input
                                                       type={'text'}
@@ -62,17 +60,23 @@ export default function Index() {
                                                             required={true}
                                                       />
                                                 </div>
-                                                <div className="w-full col-span-1 flex flex-col gap-y-2">
+                                                <div className="w-full lg:pr-3 pr-0 col-span-1 flex flex-col gap-y-2">
                                                       <Label htmlFor={'phone'} title={'Telepon'} />
                                                       <PhoneInput
-                                                            defaultCountry="id"
-                                                            value={phone}
-                                                            onChange={(value) => setPhone(value)}
-                                                            placeholder="812-3456-7890"
+                                                            country={'id'}
+                                                            enableSearch
+                                                            inputProps={{
+                                                                  name: 'phone',
+                                                                  required: true,
+                                                            }}
+                                                            containerClass="w-full"
+                                                            inputClass="!w-full !py-[22px] !pl-10 !bg-theme-form rounded-[8px] !font-normal !text-xs !leading-[14px] !text-theme-gray !outline-none !border-none"
+                                                            buttonClass="!w-max !h-max !top-1/2 !-translate-y-1/2 !bg-theme-gray !border-none !outline-none !left-[3px] !hover:bg-theme-gray"
+                                                            dropdownClass="!text-xs"
                                                       />
                                                 </div>
                                           </div>
-                                          <div className="flex flex-col gap-y-2 mb-3">
+                                          <div className="w-full flex flex-col gap-y-2 mb-3">
                                                 <Label htmlFor={'password'} title={'Kata Sandi'} />
                                                 <InputPassword
                                                       id={'password'}
@@ -81,7 +85,7 @@ export default function Index() {
                                                       required={true}
                                                 />
                                           </div>
-                                          <div className="flex flex-col gap-y-2">
+                                          <div className="w-full flex flex-col gap-y-2">
                                                 <Label htmlFor={'confirm_password'} title={'Ulangi Kata Sandi'} />
                                                 <InputPassword
                                                       id={'confirm_password'}
